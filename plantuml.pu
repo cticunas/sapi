@@ -1,0 +1,189 @@
+@startuml  
+
+class api.controllers.MarketController{
+}
+class api.controllers.GyreController{
+}
+class api.controllers.SectorController{
+}
+class api.controllers.RateController{
+}
+class api.controllers.StandController{
+}
+class api.controllers.NotificationController{
+}
+class api.controllers.PersonController{
+}
+class api.controllers.UserController{
+}
+class api.controllers.FractionaryController{
+}
+class api.controllers.ConceptController{
+}
+class api.controllers.CashboxController{
+}
+class api.controllers.FileController{
+}
+class api.controllers.CobratorTicketController{
+}
+class api.controllers.PaymentController{
+}
+
+
+
+class models.People{  
+name:string  
+lastname:string  
+birth:date  
+dni:string  
+phone1:string  
+phone2:string  
+status:integer  
+}  
+class models.User{  
+username:string  
+password:string    
+role:string  
+status:integer  
+}  
+class models.Market{  
+code:string  
+name:string  
+address:string  
+photo:string  
+file:string
+status:integer  
+}  
+class models.Sector{  
+code:string  
+name:string  
+status:integer  
+}  
+class models.File{
+nombre:string
+type:string
+reference_id:integer
+create_user_id:integer
+create_at:datetime
+}
+class models.Gyre{  
+    code:string  
+    name:string  
+    status:integer
+}  
+class models.Stand{  
+    code:string  
+    location:string  
+    photo:string  
+    adjudication:string  
+    titular_id:integer  
+    conductor_id:integer  
+    sector_id:integer
+    market_id:integer
+    gyre_id:integer
+    rate_id:integer
+    status:integer  
+}  
+class models.Rate{
+    amount:float
+    status:integer
+}
+class models.StandHistorical{}  
+
+class models.Notification{ 
+    code:string  
+    name:string  
+    content:string  
+    to_id:integer  
+    file:string  
+    delivery_status:integer  
+    delivery_at:datetime  
+    status:integer  
+}  
+class models.CobratorTicket{
+    code:string
+    name:string
+    type:string
+    status:integer
+} 
+class models.Cashbox{
+    date_init:datetime
+    date_end:datetime
+    status:integer
+    amount:float
+}
+
+class models.Payment{
+    code:string
+    client_id:integer
+    date_at:datetime
+    total:float
+    user_id:integer
+    paymed:integer
+    status:integer
+}
+class models.PaymentDetail{
+    q:integer
+    detail:string
+    payment_concept_id:integer
+    total:float
+}
+
+class models.PaymentConcept{
+    code:string
+    name:string
+    status:integer
+}
+class models.RateHistorical{
+}
+
+class models.Fractionary{
+    to_id:integer
+    debt:float
+    interest:float
+    code:string
+    quotes:integer
+    date_at:datetime
+    user_id:integer
+    file:string
+    payment_concept_id:integer
+    status:integer
+}
+class models.FractionaryDetail{
+    quota:integer,
+    date_at:datetime
+    payment_date:datetime
+    description:string
+    amount:float
+    file:string
+    status:integer
+}
+
+models.Sector "1" o--"*" models.Stand 
+models.Market "1"*--"*" models.Stand
+models.Gyre "1"*--"*" models.Stand
+models.Rate "1"*--"*" models.Stand
+models.Rate "1"*--"*" models.RateHistorical
+models.Gyre "1"*--"*" models.Rate
+models.Market "1"*--"*" models.Rate
+models.Stand "1"*--"*" models.StandHistorical
+models.Person "1"*--"*" models.Stand
+models.Person "1"*--"*" models.User
+models.User "1"*--"*" models.Fractionary 
+ models.User "1"*--"*" models.Cashbox
+models.User "1"*--"*" models.File
+models.User "1"*--"*" models.CobratorTicket
+models.User "1"*--"*" models.Payment
+
+models.Stand "1"*--"*" models.Notification
+
+models.Payment "1"*--"*" models.PaymentDetail
+models.PaymentConcept "1"*--"*" models.PaymentDetail 
+models.PaymentConcept "1"*--"*"   models.Fractionary
+'models.Schedule -- models.Person
+'models.Schedule -- models.ScheduleDetail
+
+models.Person "1"*--"*" models.Fractionary
+models.Fractionary "1"*--"*" models.FractionaryDetail
+
+@enduml

@@ -1,0 +1,49 @@
+codigo_mercado,codigo_sector,tipo,year,concepto,codigo_puesto,nombre,tarifa,enero,febrero,marzo,abril,mayo,junio,julio,agosto,setiembre,octubre,noviembre,diciembre
+sisa,	JR. CALLAO,	normal,	2005,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	0,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2005,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2005,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	0,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2006,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2006,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2006,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2007,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2007,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2007,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2008,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2008,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2008,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2009,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2009,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2009,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2010,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2010,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2010,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2011,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2011,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2011,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+psisa,	JR. CALLAO,	normal,	2012,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2012,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2012,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2013,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2013,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2013,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2014,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2014,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2014,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2015,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2015,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2015,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2016,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2016,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2016,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2017,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2017,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2017,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	29,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2018,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2018,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2018,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	0,	0
+sisa,	JR. CALLAO,	normal,	2019,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	31,	28,	31,	30,	31,	30,	31,	31,	30,	31,	30,	31
+sisa,	JR. CALLAO,	normal,	2019,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2019,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2020,	sisa,	1,	AURELIO RAYMUNDO SULCARAY,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2020,	sisa,	2,	LUIS ALBERTO FABIAN CHAUPIS/REBECA FABIAN CHAUPIS,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0
+sisa,	JR. CALLAO,	normal,	2020,	sisa,	3,	LUCIA CIERTO LOPEZ,	1,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0,	0

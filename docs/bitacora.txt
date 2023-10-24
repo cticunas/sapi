@@ -1,0 +1,101 @@
+para crear controller resource api
+php artisan make:controller API/PhotoController --api
+
+Para crear log con errores. donde suceda el error:
+Log::error($message);
+
+composer require laravel/ui
+php artisan ui vue --auth
+
+tutorial para sidebar
+https://bootstrapious.com/p/bootstrap-sidebar
+
+Crear controladores api
+php artisan make:controller API/PhotoController --api
+---
+Para clonar el PY. 
+1. bajarlo de git.
+2. ejecutar composer install
+3. crear el archivo .env a partir del .env.example
+cambiar los parametros de conexion a BD. la BD debe existir en Mysql.
+y en APP_URL poner localhost:8000 y guardar.
+No se olvide del parametro UPLOADS_PATH
+4. crear la llave php artisan key:generate
+5. verificar permisos de escritura en storage/ y bootstrap/cache
+    $ chmod -R 777 storage/ 
+    $ chmod -R 777 bootstrap/cache
+6. correr las migraciones (mysql debe estar corriendo): php artisan migrate
+Listo
+
+-- 
+Para correr la aplicacion
+php artisan serve
+
+npm install
+npm run watch
+
+Para Limpiar la Bd e inicializar datos
+php artisan migrate:fresh --seed
+
+Si sale error de Seeder no existe.
+composer dumpautoload
+
+Para agregar nuevos campos en el model con plantuml
+-- primero borrat todos los migrations
+php artisan plant:migrations
+
+------------ Ejecutar test con metodo especifico ------------
+ ./vendor/bin/phpunit tests/Feature/StandTest.php --filter {testsearch} --verbose
+
+ ------------- ver historial de comandos ---------
+ history
+
+para crear seed factories.
+php artisan make:factory ClubFactory
+se crean en /database/factories
+
+Para crear storage publico, accesible a web
+php artisan filesystem:link
+
+En windows deberia funcionar asi: mklink /enlace-simbolico /rutareal (cuidado permisos)
+>mklink /D X:\LWP\sapi\public\storage X:\sapi-files
+
+Para correr las pruebas unitarias backend
+./vendor/bin/phpunit --verbose
+
+Para enviar correos se esta usando una cuenta en mailtrap.io
+esto simula el envio de correos, a una bandeja simulada en esa plataforma.
+se debe confiurar el mail.smtp en .env
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=03551544ea1199
+MAIL_PASSWORD=a56986c287f47b
+MAIL_FROM_ADDRESS=club@lwp.com
+MAILFROM_NAME=LWP
+MAIL_ENCRYPTION=null
+
+--- smpt -----
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=465
+MAIL_USERNAME=yelsin62@gmail.com
+MAIL_PASSWORD=elsonido.com123
+MAIL_ENCRYPTION=ssl
+MAIL_FROM_NAME='Facturador'
+MAIL_FROM_ADDRESS='facturador@lwpsac.com'
+
+En caso tengas este error: Please provide a valid cache path
+crear las carpetas storage/framework:
+    sessions
+    views
+    cache
+
+
+documentacion para excel 3.1
+https://docs.laravel-excel.com/3.1/exports/column-formatting.html#styling
+
+https://phpspreadsheet.readthedocs.io/en/latest/topics/recipes/#valid-array-keys-for-style-applyfromarray
+
+para crear un acceso directo, permitiendo la visualizacion de las imagenes subidas desde merced, ejecutar esto accediendo a la carpeta merced_conductiva
+mklink /D public public\storage C:\archivos_merced

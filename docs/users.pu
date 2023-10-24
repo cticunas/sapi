@@ -1,0 +1,20 @@
+@startuml  
+
+actor rentas
+actor caja
+actor servicios_publicos
+actor informatica
+
+package Merced_Conductiva { 
+    [Rentas] 
+    [Caja]
+    [Multas_Directas]
+    [Usuarios_Admin]
+}
+
+rentas-->Rentas
+caja --> Caja
+servicios_publicos --> Multas_Directas
+informatica --> Usuarios_Admin
+
+@enduml

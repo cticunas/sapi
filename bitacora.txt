@@ -1,0 +1,78 @@
+Arquitectura:
+
+
+Controller => Repository => Models
+ |
+View
+
+Crear Controlador:
+php artisan make:controller ResearchController
+Crear modelo:
+php artisan make:model Research
+
+Crear migration:
+php artisan make:migration create_table_research
+
+Crear seeders:
+php artisan make:seeder UserSeeder
+
+Ejecutar migraciones:
+php artisan migrate:fresh --seed
+
+Cuando un seeder no se encuentra, ejecutar:
+composer dump-autoload
+(Si no es suficiente con el paso anterior, entrar al archivo composer.json
+Buscar "autoload", luego "classmap" y borrar  "database/factories"
+Despues ejecutar: composer dump-autoload )
+
+npm run watch
+
+php artisan serve
+
+carpetas importantes:
+storage/framework/cache
+storage/framework/sessions
+storage/framework/views
+
+
+Ignorar archivos para los commits siguientes:
+> git update-index --assume-unchanged '<file>'
+
+  Dejar de ignorar el archivo:
+  > git update-index --no-assume-unchanged '<file>'
+
+  (link de la información)[https://es.stackoverflow.com/questions/15551/ignorar-archivos-en-commits-ya-realizados-y-empujados] 
+
+Resetear cambios commiteados:
+  a. Conservar los cambios añadidos antes del commit:
+    > git reset --soft HEAD@{#}
+    
+  b. Deshacer cambios añadidos antes del commit:
+    > git reset --hard HEAD@{#}
+
+Setear zona horaria en PHP:
+
+  date_default_timezone_set('America/Lima');
+
+Reemplazar todas tildes dentro de los archivos de la data.
+
+  > cd database/data
+  > sh replace.sh
+
+En caso suceda un problema al ejecutar *npm run watch* (error 134). Sigue estos pasos.
+
+  > rm -rf node_modules
+  > rm package-lock.json
+  > npm cache clear --force
+  > php artisan cache:clear
+  > php artisan view:clear
+  > php artisan config:clear
+  > npm install
+
+Para conectar con Postgres
+  > Habilitar en el archivo php.ini,  de Apache, la extension=pdo_pgsql, quitandole el ; al inicio.
+Para el Apache luego Iniciar.
+Correr la migracion.
+
+En caso no corre las migraciones, instala el siguiente paquete:
+  > sudo apt-get install php-pdo-pgsql

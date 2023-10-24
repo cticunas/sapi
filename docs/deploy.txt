@@ -1,0 +1,55 @@
+[Entorno Pruebas]
+Para desplegar la aplicacion en pruebas. luego de descargado el codigo.
+git clone https://[mi_usuario]@bitbucket.org/brian_pando/club_ciencia.git
+..............
+1. ir al directorio del proyecto descargado.
+$ cd /carpeta_del_proyecto/
+
+2. crear el archivo .env a partir del .env.example
+cambiar los parametros de conexion a BD. la BD debe existir en Mysql.
+y en APP_URL poner localhost:8000 y guardar.
+No se olvide del parametro UPLOADS_PATH
+
+3. ejecutar
+$ composer install
+$ cp .env.example .env
+$ php artisan key:generate
+$ chmod -R 777 storage/ 
+$ chmod -R 777 bootstrap/cache
+$ php artisan filesystem:link
+
+4. debes tener php7 y mysql5
+$ php artisan migrate:fresh --seed
+$ php artisan serve
+
+5. en el navegador escribir localhost:8000
+Listo.
+inicialmente hay 4 usuarios.
+asesor@gmail.com
+ugel@gmail.com
+dre@gmail.com
+concytect@gmail.com
+claves: password
+
+[Entorno Produccion] Para llevar por primera vez.
+Debe existir php mysql y apache|nginx.
+1. poner el codigo del proyecto en un directorio de htdocs
+2. crear la bd de produccion.
+3. crear la bd y sus campos. por ser la primera vez se debe ejecutar.
+4. ejecutar
+$ composer install
+$ php artisan key:generate
+$ mkdir storage/framework/sessions
+$ mkdir storage/framework/cache
+$ mkdir storage/framework/views
+$ chmod -R 777 storage/
+php artisan migrate:fresh --seed
+php artisan filesystem:link : esto le dice a laravel que se subiran archivos de acceso publico.
+
+[Mantenimiento y mejoras]
+Cuando se haga mejoras al sistema, jamas ejecutar php artisan migrate:fresh, 
+este comando elimina las tablas y sus datos para volverlos a crear vacios.
+
+es recomendable solo ejecutar php artisan migrate
+
+en el server es necesiario correr: npm run watch o subir el app.js y app.css generado.

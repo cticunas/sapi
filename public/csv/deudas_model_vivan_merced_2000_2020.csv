@@ -1,0 +1,967 @@
+codigo_mercado,codigo_sector,tipo,year,concepto,codigo_puesto,nombre,tarifa,enero,febrero,marzo,abril,mayo,junio,julio,agosto,setiembre,octubre,noviembre,diciembre
+model,vivan,normal,2000,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A08,ROCA MENDOZA Sixta V.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A15,MENDOZA DE ENCARNACION Vicenta,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2000,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A22,LEON CHAGUA Rosa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A28,HERVACIO ROMERO Marino,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A30,ISMINIO DE VEGA Liceth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A31,RIVERA EULOGIO Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A36,GARAY ORBESO Olinda Mercedes,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2000,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A41,JUSTO EUSTAQUIO Emiliano,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A45,CELESTINO BEJARANO Lucila,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B10,SETMALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B20,JUSTO LUJAN Marina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B38,YABAR BENAVIDEZ Concepción María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2000,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A08,ROCA MENDOZA Sixta V.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A15,MENDOZA DE ENCARNACION Vicenta,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2001,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A22,LEON CHAGUA Rosa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A28,HERVACIO ROMERO Marino,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A30,ISMINIO DE VEGA Liceth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A31,RIVERA EULOGIO Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A36,GARAY ORBESO Olinda Mercedes,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2001,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A41,JUSTO EUSTAQUIO Emilia/PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2001,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A45,CELESTINO BEJARANO Lucila,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B10,SETMALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B20,JUSTO LUJAN Marina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B38,YABAR BENAVIDEZ Concepción María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2001,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A08,ROCA MENDOZA Sixta V.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A15,MENDOZA DE ENCARNACION Vicenta,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2002,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A22,LEON CHAGUA Rosa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A28,HERVACIO ROMERO Marino,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A30,ISMINIO DE VEGA Liceth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A31,RIVERA EULOGIO Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A36,GARAY ORBESO Olinda Mercedes,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2002,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A41,JUSTO EUSTAQUIO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A45,CELESTINO BEJARANO Lucila,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B10,BUSTAMANTE BERROSPI SOFIA,16,16,16,16,0,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2002,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2002,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2002,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A08,ROCA MENDOZA Sixta V.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A15,MENDOZA DE ENCARNACION Vicenta,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A22,LEON CHAGUA Rosa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2003,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A28,HERVACIO ROMERO Marino,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A30,ISMINIO DE VEGA Liceth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A31,RIVERA EULOGIO Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A36,GARAY ORBESO Olinda Mercedes,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A41,JUSTO EUSTAQUIO Emiliano,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A45,CELESTINO BEJARANO Lucila,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2003,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2003,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2003,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A15,MENDOZA DE ENCARNACION Vicenta,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A22,LEON CHAGUA Rosa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2004,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A28,HERVACIO ROMERO Marino,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A30,ISMINIO DE VEGA Liceth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A31,RIVERA EULOGIO Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A36,GARAY ORBESO Olinda Mercedes,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A41,JUSTO EUSTAQUIO Emiliano,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A45,CELESTINO BEJARANO Lucila,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2004,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2004,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2004,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A13,SILVA RAMIREZ FLORITA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A21,GORI CLADERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A22,GLORIA REA NICOLAS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2005,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A30,BUENDIA RESPALDIZA Aurelia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A31,RIVERA EUGENIA Isabel,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A34,USHIÑAGUA PIZANGO María M.,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A36,GARAY ORBESO Olinda Mercedes,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A41,JUSTO EUSTAQUIO Emiliano,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B19,NIETO SAGASTE Teresa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2005,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2005,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2005,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A21,GORI CLADERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A22,GLORIA REA NICOLAS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2006,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A30,BUENDIA RESPALDIZA Aurelia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A41,JUSTO EUSTAQUIO Emiliano,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2006,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B03,HERRERA TARAZONA Narcisa,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B19,LASTRA CAMPOS Aldegunda,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2006,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2006,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2006,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A17,PILCO LUNA Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A21,GORI CLADERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A22,GLORIA REA NICOLAS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2007,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A41,JUSTO EUSTAQUIO Emiliano/PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2007,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,A46,FASABI SAAVEDRA Lleny,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B19,LASTRA CAMPOS Aldegunda,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2007,merced,B29,GUERRA SHAPIAMA Nelly Octavia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2007,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2007,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A17,REYNOSO REGUIZ DEYSI MARLENI,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A22,GLORIA REA NICOLAS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2008,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2008,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B19,LASTRA CAMPOS Aldegunda,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2008,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2008,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2008,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A17,REYNOSO REGUIZ DEYSI MARLENI,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A22,GLORIA REA NICOLAS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2009,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2009,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B19,MORENO MOGOLLON Marivel Rosula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2009,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2009,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2009,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A16,CHUJUTALLI TELLO Norma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A22,SOLIS CHAVEZ Pedro,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2010,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A35,AIRA CAQUI Absalon,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2010,merced,A42,RAMIREZ VDA. DE ROJAS Elmira,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B14,TACUCHI MORA Pablo Fermin,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B19,MORENO MOGOLLON Marivel Rosula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2010,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2010,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2010,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A22,NAZARIO CONDE ANA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2011,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A34,ACOSTA VERDE ROSA ALMIRA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2011,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B19,MORENO MOGOLLON Marivel Rosula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2011,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2011,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2011,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,0,16,16,16,16,16
+model,vivan,normal,2012,merced,A09,MOROCCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A22,NAZARIO CONDE ANA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2012,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A33,SOLORZANO MARTINEZ Juana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A39,MATIAS SARAVIA Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2012,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A45,CELESTINO BEJARANO Lucilo,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B19,MORENO MOGOLLON Marivel Rosula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B20,JUSTO LUJAN Marina,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2012,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2012,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2012,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A01,ISLA HIDALGO Deysi,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A22,NAZARIO CONDE ANA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2013,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A31,RIVERA EUGENIA Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2013,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A44,AGUILAR VILLEGAS Alejandrina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A45,CELESTINO AMBROSIO DONATILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B19,MARIVEL ROSULA MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B20,LUCAREA VILLANUEVA JUSTO,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2013,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2013,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2013,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A22,NAZARIO CONDE ANA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2014,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A37,HUAMAN DE SOTO Emilia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2014,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A45,CELESTINO AMBROSIO DONATILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2014,merced,B20,LUCAREA VILLANUEVA JUSTO,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2014,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2014,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2014,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A04,MALPARTIDA LANDA Olimpia,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,0,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A22,NAZARIO CONDE ANA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,10,16,16,16,16,16,16,0,16
+model,vivan,normal,2015,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2015,merced,A25,POMALAYA CANO Vilma,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A27,HURTADO ESPINOZA Paula,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2015,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A45,CELESTINO AMBROSIO DONATILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,A46,CIPRIANO PUJAY MARIA EUGENIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,0,16,16,0,16,16,16,16,0
+model,vivan,normal,2015,merced,B20,LUCAREA VILLANUEVA JUSTO,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2015,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2015,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2015,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A04,ARNAO MALPARTIDA NANCY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A07,CHAUPIS CARRILLO Hipolita,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A09,MOROCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A22,HUAMAN SANTILLAN LEVINDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A24,MORENO CASTAÑEDA SARA,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2016,merced,A25,VERA ALVITES Kenia Ruth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A27,DAVILA HURTADO ANSELMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2016,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2016,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A45,ZACARIAS REMUNDO PASCUAL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,A46,ESCALANTE TENAZOA SONIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,0,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,0,16,16,16,0,0,0,0,0
+model,vivan,normal,2016,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B20,LUCAREA VILLANUEVA JUSTO,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2016,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2016,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2016,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A04,ARNAO MALPARTIDA NANCY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A07,CORDOVA CHAUPIS CELESTINA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A09,MOROCCO ROJO María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2017,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A22,HUAMAN SANTILLAN LEVINDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,0,0,0,0
+model,vivan,normal,2017,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A25,VERA ALVITES Kenia Ruth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A27,DAVILA HURTADO ANSELMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2017,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A45,ZACARIAS REYMUNDO PASCUAL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,A46,ESCALANTE TENAZOA SONIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B12,MOZO PALOMINO Ernestina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B20,LUCAREA VILLANUEVA JUSTO,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2017,merced,B29,LUIS RAMIREZ LAVERIANO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B38,YABAR BENAVIDEZ Concepción María,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2017,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2017,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A04,ARNAO MALPARTIDA NANCY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A07,CORDOVA CHAUPIS CELESTINA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A09,GOÑEZ MOROCCO ROLY RONEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,0,0,0,16,0,0,0,0,0,0,0,0
+model,vivan,normal,2018,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2018,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A21,GORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A22,HUAMAN SANTILLAN LEVINDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A25,VERA ALVITES Kenia Ruth,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A27,DAVILA HURTADO ANSELMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,16,16,16,16,0,0,0,0,0,0,0,0
+model,vivan,normal,2018,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2018,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A45,ZACARIAS REMUNDO PASCUAL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,A46,ESCALANTE TENAZOA SONIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B12,SALAS MOZO GLADIS VILMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,0,0,0
+model,vivan,normal,2018,merced,B20,LONGINO SARMIENTO FALCÓN ,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2018,merced,B29,ERNESTINA POZO SOTO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B38,YABAR BENAVIDEZ María Concepción,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2018,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2018,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A04,ARNAO MALPARTIDA NANCY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A05,BARRANTES BUSTAMANTE Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A06,ROSALES LINO Victoria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A07,CORDOVA CHAUPIS CELESTINA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,16,16,16,16,16,16,16,0,0,0,0,0
+model,vivan,normal,2019,merced,A09,GOÑEZ MOROCCO ROLY RONEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A13,JUSTO DE MOROCCO TERESA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,A16,ORTEGA CASAS JUSTA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A21,CORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A22,HUAMAN SANTILLAN LEVINDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,16,16,16,16,16,16,16,16,0,0,0,0
+model,vivan,normal,2019,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A25,VERA ALVITES Kenia Ruth,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A27,DAVILA HURTADO ANSELMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A28,PABLO GARAY David,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2019,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A32,VEGA RAMOS Dora,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A33,LEIVA MATTOS ORLANDO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,A36,PARDO DIAZ Mariela Victoria,16,0,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A39,MATIAS DE DURAND Graciela,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,A45,ZACARIAS REMUNDO PASCUAL,16,16,16,16,16,16,16,16,16,16,16,0,0
+model,vivan,normal,2019,merced,A46,ESCALANTE TENAZOA SONIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B03,EFROCINA ACENCIO DE BERNALES,16,16,16,16,16,16,16,0,0,0,0,0,0
+model,vivan,normal,2019,merced,B10,MALPARTIDA MARTEL Ana María,16,16,16,16,16,16,0,0,0,0,0,0,0
+model,vivan,normal,2019,merced,B11,GOMEZ ISIDRO Wilder,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B12,SALAS MOZO GLADIS VILMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B20,LONGINO SARMIENTO FALCÓN ,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2019,merced,B29,ERNESTINA POZO SOTO,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2019,merced,B38,YABAR BENAVIDEZ María Concepción,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2019,merced,B40,MENDOZA TORREZ Lina,16,16,16,16,16,16,16,16,16,16,16,16,0
+model,vivan,normal,2019,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2020,merced,A01,MARIA RICARDINA RUBIO GABRIEL,16,16,16,0,0,0,0,0,0,0,16,16,16
+model,vivan,normal,2020,merced,A02,HUANUCO CARLOS TEOFILA,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A04,ARNAO MALPARTIDA NANCY,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A05,BARRANTES BUSTAMANTE Victoria,16,0,0,0,0,0,0,0,0,16,16,16,0
+model,vivan,normal,2020,merced,A06,ROSALES LINO Victoria,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A07,CORDOVA CHAUPIS CELESTINA,16,16,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A08,HUANUCO CARLOS GLICERIA FAUSTA,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A09,GOÑEZ MOROCCO ROLY RONEL,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A13,JUSTO AGUILAR TERESA,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A15,TINEO NATIVIDAD JUAN DE DIOS,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A16,ORTEGA CASAS JUSTA,16,16,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A17,REYNOSO REGUIZ FRANCO EDWARD,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A18,MALPARTIDA PEREZ MARIA,16,16,16,0,0,0,0,0,0,16,16,16,16
+model,vivan,normal,2020,merced,A21,CORI CALDERON Gloria,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2020,merced,A22,HUAMAN SANTILLAN LEVINDE,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A23,CAMPOS CHUQUILLAURI Juan de Dios,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A24,MORENO CASTAÑEDA SARA,16,16,16,16,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A25,VERA ALVITES Kenia Ruth,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A26,CASTRO RAIMUNDO EDITH,16,16,16,0,0,0,0,0,0,16,16,16,16
+model,vivan,normal,2020,merced,A27,DAVILA HURTADO ANSELMA,16,16,16,0,0,0,0,0,0,16,16,16,16
+model,vivan,normal,2020,merced,A28,PABLO GARAY David,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A30,VEGA BUENDIA CLOTILDE,16,16,16,16,0,0,0,0,0,16,16,16,0
+model,vivan,normal,2020,merced,A31,RIVERA EUGENIO Emiliana,16,16,16,16,16,16,0,0,0,16,16,16,0
+model,vivan,normal,2020,merced,A32,VEGA RAMOS Dora,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A33,LEIVA MATTOS ORLANDO,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A34,DIEGO SOLIS CHAVEZ,16,16,16,0,0,0,0,0,0,16,16,0,0
+model,vivan,normal,2020,merced,A35,ASENCIO GERONIMO WILSON ANTONIO,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A36,PARDO DIAZ Mariela Victoria,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A37,SOTO HUAMAN ESTHER RAQUEL,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A39,MATIAS DE DURAND Graciela,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A41,JUSTO EUSTAQUIO Emiliano PASADIZO,0,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A42,PARDO DIAZ ANTONIETA,16,16,16,0,0,0,0,0,0,16,16,0,0
+model,vivan,normal,2020,merced,A44,CHAVEZ SILUPU CARLOS CASELY,16,16,16,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A45,ZACARIAS REMUNDO PASCUAL,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,A46,ESCALANTE TENAZOA SONIA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2020,merced,B03,EFROCINA ACENCIO DE BERNALES,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,B10,MALPARTIDA MARTEL Ana María,16,0,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,B11,GOMEZ ISIDRO Wilder,16,16,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,B12,SALAS MOZO GLADIS VILMA,16,16,16,16,16,16,16,16,16,16,16,16,16
+model,vivan,normal,2020,merced,B14,TACUCHI TOLENTINO DIONICIO,16,16,16,0,0,0,0,0,0,16,16,16,16
+model,vivan,normal,2020,merced,B19,MARIVEL R. MORENO MOGOLLON,16,16,0,0,0,0,0,0,0,0,0,0,0
+model,vivan,normal,2020,merced,B20,LONGINO SARMIENTO FALCÓN ,15,15,15,15,0,0,0,0,0,0,15,15,15
+model,vivan,normal,2020,merced,B29,ERNESTINA POZO SOTO,16,16,16,0,0,0,0,0,0,16,16,16,16
+model,vivan,normal,2020,merced,B38,YABAR BENAVIDEZ María Concepción,15,15,15,15,15,15,15,15,15,15,15,15,15
+model,vivan,normal,2020,merced,B40,MENDOZA TORREZ Lina,16,16,16,0,0,0,0,0,0,16,0,0,0
+model,vivan,normal,2020,merced,B43,SANTILLAN OLIVA Clemente,16,16,16,16,16,16,16,16,16,16,0,0,0

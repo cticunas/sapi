@@ -1,0 +1,222 @@
+﻿"id","name","type","parent_id","organization_id"
+1,"Biotecnologia y Valoracion de la agrobiodiversidad","Programa",,1
+2,"Valorizando nuestra biodiversidad mediante biotecnologia - valbiodiversidad","Grupo",,1
+3,"Cultivo in vitro de la agrobiodiversidad sensu latu","Linea",2,
+4,"Estudios de la diversidad genetica y molecular de la agrobiodiversidad y desarrollo de marcadores moleculares para seleccion asistida","Linea",2,
+5,"Prospeccion de moleculas y valor agregado en la agrobiodiversidad","Linea",2,
+6,"Agroculturalidad y Biopatrimonio","Programa",,1
+7,"Biodiversidad y cambio climatico para la seguridad alimentaria","Grupo",,1
+8,"Agricultura familiar y agricultura andino amazonica, agrobiodiversidad, evolucion y adaptacion al cambio climatico para la producion de servicios gastronomicos y ecoturismo","Linea",7,
+9,"Educacion intercultural para el cambio climatico","Linea",7,
+10,"Suelos y Fertilizantes","Programa",,1
+11,"Recuperacion y manejo de suelos degradados y contaminados","Grupo",,1
+12,"Fertilidad, clasificacion, recuperacion y manejo de suelos","Linea",11,
+13,"Servicios ecosistemicos, descontaminacion del suelo y medio ambiente","Linea",11,
+14,"Agricultura Moderna y Tradicional","Programa",,1
+15,"Geomatica y agricultura sostenible en la Amazonia","Grupo",,1
+16,"Geomatica y agricultura de precision","Linea",15,
+17,"Agroecologia","Linea",15,
+18,"Especies agricolas, sistemas de produccion y proteccion vegetal","Programa",,1
+19,"Plantas medicinales, ornamentales y floristicos","Grupo",,1
+20,"Caracterizacion morfo-fitoquimica de los recursos fitogeneticos, propagacion, produccion, tecnicas de cultivos y conservacion ex situ","Linea",19,
+21,"Diagnostico y control de plagas","Linea",19,
+22," Gestion de la produccion vegetal, valor agregado de la cosecha, agronegocios, riego y construcciones agropecuarias.","Linea",19,
+23,"Cultivos tropicales / fitosanidad","Programa",,1
+24,"Epidemiologia, resistencia y manejo integrado de enfermedades en cultivos tropicales","Grupo",,1
+25,"Manejo integrado de pestes","Linea",24,
+26,"Diagnostico fitosanitario y bioinsumos - GIDIFIBI","Grupo",,1
+27,"Desarrollar tecnicas de diagnostico y evaluacion de fitopatogenos, insectos plaga y aryenses en especies agricolas y forestales","Linea",26,
+28,"Adaptar el uso de tecnologias de la geomatica en el diagnostico fitosanitario","Linea",26,
+29,"Obtener bioinsumos a partir de microorganismos y principios activos de plantas para el control de pestes agricolas","Linea",26,
+30,"Identificacion y produccion de predadores y parasitoides de importancia agricola.","Linea",26,
+31,"Caracterizar microorganismos para la formulacion de biofertilizantes.","Linea",26,
+32,"Desarrollar ensayos de eficacia de pesticidas en el control de fitopatogenos e insectos plaga.","Linea",26,
+33,"Produccion animal sostenible","Programa",,5
+34,"Ganaderia sostenible y Medio ambiente","Grupo",,5
+35,"Ecologia de pasturas y forrajes en sistemas silvopastoriles","Linea",34,
+36,"Aprovechamiento de residuos de la produccion animal","Linea",34,
+37,"Nutricion y sanidad animal","Grupo",,5
+38,"Nutricion, alimentacion y sanidad de animales domesticos, silvestres y acuaticos en ecosistemas sostenibles.","Linea",37,
+39,"Produccion, reproduccion y mejoramiento animal","Grupo",,5
+40,"Produccion, reproduccion y mejoramiento de animales domesticos, silvestres y acuicolas en ecosistemas sostenibles.","Linea",39,
+41,"Ciencias Quimicas","Programa",,8
+42,"Ciencias Quimicas","Grupo",,8
+43,"Quimica pura y aplicada","Linea",42,
+44,"Ingenieria de alimentos","Programa",,8
+45,"Ingenieria de alimentos","Grupo",,8
+46,"Ingenieria de alimentos","Linea",45,
+47,"Ciencia y tecnologia de alimentos","Programa",,8
+48,"Ciencia y tecnologia de alimentos","Grupo",47,8
+49,"Ciencia y tecnologia de alimentos","Linea",48,
+50,"Valoracion de la biodiversidad y Recursos Naturales y biotecnologia","Programa",,10
+51,"Manejo, conservacion y aprovechamiento sostenible de la biodiversidad, recursos naturales, bienes y servicios ecosistemicos","Grupo",,10
+52,"Manejo, conservacion y aprovechamiento sostenible de la biodiversidad, recursos naturales, bienes y servicios ecosistemicos","Linea",51,
+53,"Biodiversidad de plantas medicinales","Grupo",,10
+54,"Biodiversidad de plantas medicinales","Linea",53,
+55,"Ordenamiento del paisaje, gobernanza y adaptacion al cambio climatico","Grupo",,10
+56,"Ordenamiento del paisaje, gobernanza y adaptacion al cambio climatico","Linea",55,
+57,"Biotecnologia de Recursos de flora y fauna silvestre","Grupo",,10
+58,"Biotecnologia de Recursos de flora y fauna silvestre","Linea",57,
+59,"Gestion Ambiental","Programa",,10
+60,"Gestion Ambiental","Grupo",,10
+61,"Vulnerabilidad, mitigacion y adaptacion al cambio climatico.","Linea",60,
+62,"Gestion de la contaminacion e Impactos ambientales.","Linea",60,
+63,"Educacion ambiental.","Linea",60,
+64,"Conflictividad territorial y ambiental.","Linea",60,
+65,"Desarrollo sostenible y energias renovables.","Linea",60,
+66,"Gestion de riesgos: ambientales, laborales, climaticos y de desastres naturales.","Linea",60,
+67,"Valoracion economica del patrimonio natural y cultural.","Linea",60,
+68,"Ecoeficiencia, ecoturismo y actividades sostenibles.","Linea",60,
+69,"Ciencia y Tecnologia Ambiental","Programa",,10
+70,"Ciencia y Tecnologia Ambiental","Grupo",,10
+71,"Generacion y aplicacion de tecnologias ambientales y limpias.","Linea",70,
+72,"Biorremediacion y recuperacion de ambientes degradados.","Linea",70,
+73,"Bioproduccion: aditivos, combustibles, fertilizantes y otros.","Linea",70,
+74,"Causas y efectos de la contaminacion ambiental y tecnologias para su reduccion.","Linea",70,
+75,"Tratamiento y/o aprovechamiento de aguas contaminadas y residuos solidos.","Linea",70,
+76,"Sistemas para el control de emisiones.","Linea",70,
+77,"Reprocesamiento de pasivos ambientales.","Linea",70,
+78,"Modelos ambientales, climaticos y escenarios futuros.","Linea",70,
+79,"Diversidad Biologica","Programa",,10
+80,"Biodiversidad","Grupo",,10
+81,"Desarrollo de bases tecnicas y de metodologias para la determinacion de la diversidad.","Linea",80,
+82,"Variabilidad genetica y bioprospeccion con potencial economico.","Linea",80,
+83,"Bioindicadores.","Linea",80,
+84,"Etnobiologia.","Linea",80,
+85,"Botanica.","Linea",80,
+86,"Ecologia, ecosistemas biodiversidad y Conservacion.","Linea",80,
+87,"Microbiologia.","Linea",80,
+88,"Parasitologia.","Linea",80,
+89,"Zoologia.","Linea",80,
+90,"Biologia molecular y celular.","Linea",80,
+91,"Quimica, fisica y anatomia forestal","Programa",,10
+92,"Quimica, fisica, anatomia y biotecnologia forestal","Grupo",,10
+93,"Anatomia forestal y fisica forestal.","Linea",92,
+94,"Quimica y biotecnologia forestal.","Linea",92,
+95,"Transformacion e innovacion de recursos forestales","Programa",,10
+96,"Transformacion e innovacion de recursos forestales","Grupo",,10
+97,"Tecnologia y transformacion mecanica de recursos forestales.","Linea",96,
+98,"Transformacion quimica de los recursos forestales.","Linea",96,
+99,"Gestion de bosques y plantaciones forestales","Programa",,10
+100,"Gestion de bosques y plantaciones forestales","Grupo",,10
+101,"Control de riesgos, deforestacion y cambio climatico.","Linea",100,
+102,"Silvicultura, dendrologia, manejo y ordenacion forestal.","Linea",100,
+103,"Biomasa y ecologia forestal.","Linea",100,
+104,"Ciencias basicas","Programa",,10
+105,"Ciencias basicas","Grupo",,10
+106,"Biologia y microbiologia del suelo.","Linea",105,
+107,"Ecologia y conservacion de suelos.","Linea",105,
+108,"Fisica y mecanica de suelos.","Linea",105,
+109,"Quimica de suelos.","Linea",105,
+110,"Geofisica.","Linea",105,
+111,"Hidrologia y mecanica de fluidos.","Linea",105,
+112,"Grupo de investigacion en conservacion de suelos","Grupo",104,10
+113,"Biologia y microbiologia del suelo.","Linea",112,
+114,"Fisica, quimica y conservacion del suelo.","Linea",112,
+115,"Gestion de cuencas hidrograficas","Programa",,10
+116,"Gestion de cuencas hidrograficas","Grupo",,10
+117,"Zonificacion ecologica y economica.","Linea",116,
+118,"Gestion de los recursos hidricos.","Linea",116,
+119,"Gestion del riesgo.","Linea",116,
+120,"Planificacion y ordenamiento territorial.","Linea",116,
+121,"Gestion y conservacion del recurso suelo.","Linea",116,
+122,"Cambio climatico","Programa",,10
+123,"Cambio climatico","Grupo",,10
+124,"Escenarios climaticos futuros y sus potenciales problemas globales sobre el suelo y agua.","Linea",123,
+125,"Meteorologia y Climatologia.","Linea",123,
+126,"Tecnologias de adaptacion al cambio climatico.","Linea",123,
+127,"Evaluacion de los impactos ambientales de los recursos naturales.","Linea",123,
+128,"Variacion de los regimenes climaticos.","Linea",123,
+129,"Tecnologias de Informacion","Programa",,16
+130,"Redes, seguridad y gestion de TI","Grupo",,16
+131,"Redes e Infraestructura de TI.","Linea",130,
+132,"Ciberseguridad.","Linea",130,
+133,"Internet de las cosas.","Linea",130,
+134,"Seguridad de la informacion.","Linea",130,
+135,"Sistemas de Informacion","Programa",,16
+136,"Sistemas de Informacion - GISI","Grupo",,16
+137,"Gestion de procesos de negocio.","Linea",136,
+138,"Arquitectura empresarial.","Linea",136,
+139,"Gestion de datos.","Linea",136,
+140,"Gestion de servicios de TI.","Linea",136,
+141,"Ingenieria de Software","Programa",,16
+142,"Ingenieria de Software - GINSOFT","Grupo",,16
+143,"Calidad de software.","Linea",142,
+144,"Arquitectura de software.","Linea",142,
+145,"Procesos de software.","Linea",142,
+146,"Ingenieria de requisitos.","Linea",142,
+147,"Construccion de software.","Linea",142,
+148,"Computacion.","Linea",142,
+149,"Estadistica aplicada - Computacion Cientifica, Matematica Aplicada - Biomatematica","Programa",,16
+150,"Estadistica aplicada y Ciencia Computacional","Grupo",,16
+151,"Modelos estadisticos.","Linea",150,
+152,"Procesos estocasticos.","Linea",150,
+153,"Estadistica descriptiva.","Linea",150,
+154,"Estadistica inferencial.","Linea",150,
+155,"Estadistica parametrica.","Linea",150,
+156,"Demografia.","Linea",150,
+157,"Modelos matematicos y tecnicos numericos computacionales.","Linea",150,
+158,"Matematica aplicada y Computacion Cientifica","Grupo",,16
+159,"Modelos y aplicaciones matematicas discretas y continuas.","Linea",158,
+160,"Ecuaciones diferenciales y sistemas dinamicos.","Linea",158,
+161,"Metodos numericos y modelacion matematica.","Linea",158,
+162,"Dinamica poblacional.","Linea",158,
+163,"Modelos matematicos y tecnicas numericas computacionales.","Linea",158,
+164,"Optimizacion, control y probabilidad.","Linea",158,
+165,"Modelado de sistemas.","Linea",158,
+166,"Epidemiologia matematica.","Linea",158,
+167,"Ecologia matematica.","Linea",158,
+168,"Ensenanza Universitaria","Programa",,16
+169,"Didactica en el nivel superior","Grupo",,16
+170,"Evaluacion de sistemas educativos.","Linea",169,
+171,"Metodos de ensenanza de la matematica.","Linea",169,
+172,"Uso de las TIC en la ensenanza de la matematica.","Linea",169,
+173,"Software educativo.","Linea",169,
+174,"Energia - Sistemas electromecanicos","Programa",,19
+175,"Investigacion en electromecanica","Grupo",,19
+176,"Generacion, transmision y distribucion de energia electrica.","Linea",175,
+177,"Modelamiento, simulacion y automatizacion de sistemas mecanicos, electricos y electronicos.","Linea",175,
+178,"Analisis de materiales y nanotecnologia - Ciencias Fisicas","Programa",,19
+179,"Investigacion en fisica","Grupo",,19
+180,"Sintesis de nuevos materiales y analisis de estructuras y conformacion de piezas industriales","Linea",179,
+181,"Fisica teorica y computacional.","Linea",179,
+182,"Agrofisica","Programa",,10
+183,"Investigacion en Agrofisica","Grupo",,10
+184,"Hidraulica.","Linea",183,
+185,"Riego Tecnificado.","Linea",183,
+186,"Maquinaria y Mecanizacion Agricola.","Linea",183,
+187,"Ciencias sociales y Desarrollo sostenible","Programa",,21
+188,"Ciencias sociales y Desarrollo sostenible","Grupo",,21
+189,"Contabilidad.","Linea",188,
+190,"Auditoria.","Linea",188,
+191,"Tributacion.","Linea",188,
+192,"Finanzas.","Linea",188,
+193,"Etica y responsabilidad social en las organizaciones.","Linea",188,
+194,"Gestion, Economia y Negocios","Programa",,23
+195,"Economia Empresarial, sectores productivos, sociales, cadena de valor","Grupo",,23
+196,"Economia empresarial, sectores productivos, sociales, cadena de valor.","Linea",195,
+197,"Economia Publica, Economia Financiera, Gestion y Politicas Publicas.","Grupo",,23
+198,"Economia Publica, Economia financiera, Gestion y politicas publicas.","Linea",197,
+199,"ECONOMIA DE LOS RECURSOS NATURALES Y DESARROLLO SOSTENIBLE","Programa",,23
+200,"Bioeconomia, Sostenibilidad y Evaluacion de Impactos Economicos, Sociales y Ambientales.","Grupo",,23
+201,"Bioeconomia, sostenibilidad y evaluacion de impactos economicos, sociales y ambientales.","Linea",200,
+202,"Gestion Integral de Organizaciones","Programa",,23
+203,"DESARROLLO EMPRESARIAL","Grupo",,23
+204,"Desarrollo empresarial.","Linea",203,
+205,"DESARROLLO DE INSTITUCIONES PUBLICAS Y SOCIALES","Grupo",,23
+206,"Desarrollo de Instituciones publicas y sociales.","Linea",205,
+207,"Ciencias Sociales - Desarrollo de la Educacion","Programa",,23
+208,"DEMOCRACIA POLITICA Y GOBIERNO, ESTADO, SOCIEDAD Y FAMILIA, GESTION EDUCATIVA UNIVERSITARIA Y CALIDAD Y ETICA PROFESIONAL","Grupo",,23
+209,"Democracia politica y gobierno.","Linea",208,
+210,"Estado sociedad y familia.","Linea",208,
+211,"Gestion educativa universitaria y calidad.","Linea",208,
+212,"Etica profesional.","Linea",208,
+213,"Estudios Filosoficos de las Ciencias y Tecnicas","Linea",208,
+214,"Sociedad cultural y comunicacion.","Linea",208,
+215,"Creacion y produccion artistica.","Linea",208,
+216,"Desarrollo Social","Programa",,23
+217,"CAPITAL HUMANO Y SALUD EN EL TRABAJO","Grupo",,23
+218,"Capital Humano.","Linea",217,
+219,"Gestion Empresarial.","Linea",217,
+220,"Gestion de Operaciones.","Linea",217,
+221,"Salud Ocupacional.","Linea",217,
