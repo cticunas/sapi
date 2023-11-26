@@ -14,14 +14,14 @@
       </div>
       <div style="border-top: 1px dashed #ccc; text-align:center; padding:5px">
         <div style="padding: 0 5px; margin:auto; text-align:center; background:#1890ff; border-radius: 5px; width:80% ; margin:auto;" >{{
-            user_object.role_id == 1 ? 'Administrador' 
-            : user_object.role_id == 2 ? 'Investigador' 
-            : user_object.role_id == 3 ? "Unidad investigación" 
-            : user_object.role_id == 4 ? 'DGI' 
-            : user_object.role_id == 5 ? 'Coord. Grupo' 
+            user_object.role_id == 1 ? 'Administrador'
+            : user_object.role_id == 2 ? 'Investigador'
+            : user_object.role_id == 3 ? "Unidad investigación"
+            : user_object.role_id == 4 ? 'DGI'
+            : user_object.role_id == 5 ? 'Coord. Grupo'
             : '-----'
         }}</div>
-        <div style="text-align:center; color:#fafafa; font-size:11px" v-if="user_object.role_id==2|| user_object.role_id==3||user_object.role_id==5"> {{  
+        <div style="text-align:center; color:#fafafa; font-size:11px" v-if="user_object.role_id==2|| user_object.role_id==3||user_object.role_id==5"> {{
            user_object.role_id==2?( user_object.faculty_name||'No definido')
           : user_object.role_id==3? (user_object.faculty_name||'No definido')
           : user_object.role_id==5? (user_object.group_name||'No definido')
@@ -44,7 +44,7 @@
       </a-menu-item>
 
       <a-menu-item key="category" v-if="user_object.role_id == ADMIN_ROLE || user_object.role_id == DGI_ROLE">
-        <router-link to="/category"> <a-icon type="appstore" />Grupos</router-link>
+        <router-link to="/category"> <a-icon type="appstore" />Areas</router-link>
       </a-menu-item>
 
       <a-menu-item key="plan" v-if="user_object.role_id == ADMIN_ROLE || user_object.role_id == DGI_ROLE">
@@ -65,7 +65,7 @@
 
         <a-sub-menu v-if="user_object.role_id == ADMIN_ROLE || user_object.role_id == DGI_ROLE || user_object.role_id == UNIT_ROLE">
           <span slot="title" class="submenu-title-wrapper"> <a-icon type="setting" /> Reportes</span>
-          
+
           <a-menu-item key="setting:1" v-if="user_object.role_id == ADMIN_ROLE || user_object.role_id == DGI_ROLE">
               <router-link to="/incentives"> <a-icon type="appstore" />Incentivos</router-link>
           </a-menu-item>
@@ -125,7 +125,7 @@ export default {
   mounted() {
     //this.$isLoading(true);
     this.verifyUser();
-    
+
     // this.permission = access[this.role];
     if(this.user_object && this.user_object.id) this.fetch();
   },
@@ -190,7 +190,7 @@ export default {
   border-radius: 5px;
   display:flex;
   width:50%;
-  justify-content:space-around; 
+  justify-content:space-around;
   margin-top: 1em;
   margin-left: 1em;
   align-items:center
