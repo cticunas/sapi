@@ -7,7 +7,7 @@
             color="#1890ff"></loading>
         </div>
 
-        <h4>Áreas por Facultad </h4>
+        <h4>Areas por Facultad </h4>
 
         <div>
             <vue-tree-list
@@ -101,6 +101,7 @@ export default {
         async fetch(params = {}){
             // if(this.filter.search) params.search=this.filter.search;
             let {data} =  await CategoryRepository.list(params);
+            // console.log(data);
             for(let i=0; i<data.length; i++){
                 data[i].dragDisabled = true;
                 data[i].addTreeNodeDisabled = true;
@@ -114,6 +115,10 @@ export default {
                     for (let k=0; k<data[i].children[j].children.length; k++) {
                         data[i].children[j].children[k].dragDisabled = true;
                         data[i].children[j].children[k].isLeaf = true;
+                        for (let s = 0; s < data[i].children[j].children[k].children.length; s++) {
+                            data[i].children[j].children[k].children[s].dragDisabled = true;
+                            data[i].children[j].children[k].children[s].isLeaf = true;
+                        }
                     }
                 }
             }
@@ -127,16 +132,26 @@ export default {
         },
         add(parent){
             try {
-                console.log(parent )
+                // console.log(parent )
                 this.parent=parent;
                 this.category={};
-                if( parent.type ){ //es un category
+                // if( parent.type ){ //es un category
+                //     this.category.parent_id=parent.id;
+                //     if (parent.type == 'Programa') this.category.type='Grupo';
+                //     else if (parent.type == 'Grupo') this.category.type='Linea';
+                //     else if (parent.type == 'Linea') throw ('No se puede agregar mas categorias en este nivel');
+                // }else{
+                //     this.category.type='Grupo';
+                //     this.category.organization_id = parent.id;
+                // }
+                if(parent.type){
                     this.category.parent_id=parent.id;
-                    if (parent.type == 'Programa') this.category.type='Grupo';
+                    // if (parent.type == 'Programa') this.category.type='Area';
+                    if (parent.type == 'Area') this.category.type='Grupo';
                     else if (parent.type == 'Grupo') this.category.type='Linea';
                     else if (parent.type == 'Linea') throw ('No se puede agregar mas categorias en este nivel');
-                }else{
-                    this.category.type='Grupo';
+                } else {
+                    this.category.type='Area';
                     this.category.organization_id = parent.id;
                 }
                 this.showModal=true;
@@ -160,7 +175,16 @@ export default {
             }
         },
         edit(model){
-            this.category={id: model.id, name:model.name, code: model.code, type: model.type, organization_id: model.organization_id};
+            // console.log(model)
+            this.category = {
+                id: model.id,
+                name:model.name,
+                code: model.code,
+                type: model.type,
+                organization_id: model.organization_id,
+                parent_id: model.parent_id,
+                status: model.status,
+            };
             this.showModal = true;
         },
         async remove(model){

@@ -10,14 +10,16 @@ class Category extends Model{
     // El método parent() establece una relación de pertenencia (belongsTo) para obtener la categoría padre.
     public function parent()
     {
-        return $this->belongsTo(Category::class, 'parent_id');
+        // return $this->belongsTo(Category::class, 'parent_id');
+        return $this->belongsTo(Category::class, 'parent_id', 'id');
     }
 
     // Relación para obtener las subcategorías
     // El método children() establece una relación de uno a muchos (hasMany) para obtener las subcategorías.
     public function children()
     {
-        return $this->hasMany(Category::class, 'parent_id');
+        // return $this->hasMany(Category::class, 'parent_id');
+        return $this->hasMany(Category::class, 'parent_id', 'id');
     }
 }
 
