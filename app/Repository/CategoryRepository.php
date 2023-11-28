@@ -10,15 +10,15 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryI{
 	public function __construct(Category $model){
 		parent::__construct($model);
 	}
-	// $categoriesWithChildren = \App\Models\Category::with('children')->whereNull('parent_id')->get();
-    //     echo( $categoriesWithChildren );exit;
+
     public function listTree($params){
         $orgs_condition = ['status'=>1, 'parent_id'=>null];
         $faculties=DB::table('organizations')->where($orgs_condition)->get();
+        // $categoriesWithChildren = \App\Models\Category::with('children')->whereNull('parent_id')->get();
+        // $categoriesWithChildren = Category::with('children.descendants')->whereNull('parent_id')->get();
 
-        $categoriesWithChildren = \App\Models\Category::with('children')->whereNull('parent_id')->get();
+        $categoriesWithChildren = \App\Models\Category::with('children.children')->whereNull('parent_id')->get();
 
-        // echo( $categoriesWithChildren );exit;
         foreach ($categoriesWithChildren as $key => $category) {
             foreach ($faculties as $i => $faculty) {
                 if ($category->organization_id===$faculty->id) {
