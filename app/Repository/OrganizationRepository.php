@@ -5,14 +5,14 @@ namespace App\Repository;
 use App\Models\Organization;
 use App\Repository\OrganizationRepositoryI;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Hash; 
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 class OrganizationRepository extends BaseRepository implements OrganizationRepositoryI{
 	public function __construct(Organization $model){
 		parent::__construct($model);
 	}
-	
+
 	public function listTree($params){
 		$conditions=['status'=>1];
 		$organizations=DB::table('organizations')->where($conditions)->get()->toArray();
@@ -33,7 +33,7 @@ class OrganizationRepository extends BaseRepository implements OrganizationRepos
 	public function all($params){
 		$conditions=['status'=>1];
 		$q=DB::table('organizations')->where($conditions);
-		return $q->latest()->paginate(10);    
+		return $q->latest()->paginate(10);
 	}
 
 	public function save($params){
@@ -45,7 +45,7 @@ class OrganizationRepository extends BaseRepository implements OrganizationRepos
 		}
 		return $o;
 	}
-	
+
 	public function delete($id){
 		\App\Models\Organization::find($id)->update(['status'=>0]);
 	}
