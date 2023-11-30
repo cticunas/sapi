@@ -4,13 +4,13 @@ namespace App\Repository;
 
 use App\Models\User;
 use App\Repository\UserRepositoryI;
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Support\Facades\DB;
 
 class UserRepository extends BaseRepository implements UserRepositoryI{
 	public function __construct(User $model){
 		parent::__construct($model);
 	}
-	
+
 	public function all($params){
 		$conditions=['users.status'=>1];
 		$conditions=[];
@@ -32,7 +32,7 @@ class UserRepository extends BaseRepository implements UserRepositoryI{
 			$u->update();
 		}else{
 			$p=\App\Models\Person::where(["email"=>$params['email']])->first();
-			
+
 			$params["role_id"] = 2;
 			$u = \App\Models\User::create($params);
 
@@ -42,7 +42,7 @@ class UserRepository extends BaseRepository implements UserRepositoryI{
 			}
 			$p->user_id= $u->id;
 			$p->update();
-			
+
 			$u->save();
 		}
 		$college = false;
@@ -80,14 +80,14 @@ class UserRepository extends BaseRepository implements UserRepositoryI{
 			$p=\App\Models\Person::where(["email"=>$params['email'],'status'=>1])->first();
 			$params["role_id"] = 2;
 			$u = \App\Models\User::create($params);
-			
+
 			if (is_null($p)) { //Persona existe, pero aun no tiene usuario
 				$params['user_id'] = $u->id;
 				$p=\App\Models\Person::create($params);
 			}
 			$p->user_id= $u->id;
 			$p->update();
-			
+
 			$u->save();
 		}
 		$college = false;
@@ -113,6 +113,7 @@ class UserRepository extends BaseRepository implements UserRepositoryI{
 			'people_id'=>$p->id,
 			'type'=>$p->type,
 			'program_id'=>$p->program_id,
+            'area_id'=>$p->area_id,
 			'group_id'=>$p->group_id,
 			'line_id'=>$p->line_id,
 			'college_id'=>$college ? $college->id : null,
@@ -133,7 +134,7 @@ class UserRepository extends BaseRepository implements UserRepositoryI{
 		return $o;
 	}
 
-	
+
 
 	public function get($id){
 		return $this->model->find($id);
