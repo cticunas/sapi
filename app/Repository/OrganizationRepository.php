@@ -14,20 +14,21 @@ class OrganizationRepository extends BaseRepository implements OrganizationRepos
 	}
 
 	public function listTree($params){
-		$conditions=['status'=>1];
-		$organizations=DB::table('organizations')->where($conditions)->get()->toArray();
-		$tree= array_filter($organizations, function($typeOrganization){ return $typeOrganization->parent_id==null; });
-		$tree= array_values($tree);
+		// $conditions=['status'=>1];
+		// $organizations=DB::table('organizations')->where($conditions)->get()->toArray();
+		// $tree= array_filter($organizations, function($typeOrganization){ return $typeOrganization->parent_id==null; });
+		// $tree= array_values($tree);
 
-		foreach($tree as $i=>$level1){
-			$children=array_filter($organizations, function($typeOrganization) use ($level1) { return $typeOrganization->parent_id==$level1->id; } );
-			foreach ($children as $j => $level2) {
-				$grandchildren=array_filter($organizations, function($typeOrganization) use ($level2) { return $typeOrganization->parent_id==$level2->id; } );
-				$children[$j]->children= array_values($grandchildren);
-			}
-			$tree[$i]->children= array_values($children);
-		}
-		return $tree;
+		// foreach($tree as $i=>$level1){
+		// 	$children=array_filter($organizations, function($typeOrganization) use ($level1) { return $typeOrganization->parent_id==$level1->id; } );
+		// 	foreach ($children as $j => $level2) {
+		// 		$grandchildren=array_filter($organizations, function($typeOrganization) use ($level2) { return $typeOrganization->parent_id==$level2->id; } );
+		// 		$children[$j]->children= array_values($grandchildren);
+		// 	}
+		// 	$tree[$i]->children= array_values($children);
+		// }
+        return \App\Models\Organization::with('children')->whereNull('parent_id')->get();
+        // return \App\Models\Organization::with('children')->whereNull('parent_id')->where('status', 1)->get();
 	}
 
 	public function all($params){
