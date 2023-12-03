@@ -260,7 +260,6 @@
                 this.lines = this.groups.find( e => e.id == this.person.group_id).children;
             },
             onChangeFaculties() {
-                console.log(this.person.faculty_id);
                 this.listSchoolsOfAFaculty();
                 this.listAreasOfAFaculty();
                 this.person.organization_id = null;
@@ -271,7 +270,6 @@
                 this.lines = [];
             },
             onChangeArea() {
-                console.log(this.person.area_id);
                 this.listGroupsOfAFaculty();
                 this.person.group_id = null;
                 this.person.line_id = null;
