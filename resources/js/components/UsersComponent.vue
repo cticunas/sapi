@@ -418,6 +418,7 @@
                 let dataPerson = this.data.find(item => item.id == id);
                 this.person = { ...dataPerson };
 
+                // this.person.organization_id es la escuela de la facultad
                 if (this.person.organization_id) {
                     this.person.faculty_id = this.faculties.find(faculty =>
                         faculty.children.some(child => child.id === this.person.organization_id)
