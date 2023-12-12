@@ -42,7 +42,7 @@
             </vue-tree-list>
         </div>
 
-        <a-modal :title="category.type == 'Programa' ? 'Programa' : category.type == 'Grupo' ? 'Grupo' : category.type == 'Linea' ? 'Linea' : ''" :visible="showModal" cancelText="Cancelar" :key="showModal" okText="Guardar"
+        <a-modal :title="category.type == 'Area' ? 'Area' : category.type == 'Grupo' ? 'Grupo' : category.type == 'Linea' ? 'Linea' : ''" :visible="showModal" cancelText="Cancelar" :key="showModal" okText="Guardar"
             @ok="save"
             @cancel="showModal = false">
             <a-form-model ref="userForm" :model="category" :label-col="labelCol" :wrapper-col="wrapperCol">

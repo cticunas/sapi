@@ -275,7 +275,7 @@
             async fetch(params = {}) {
                 params.all_status = true;
                 this.loading = true;
-                if(this.filter.search) params.search=this.filter.search;
+                if(this.filter.search) params.search = this.filter.search;
                 const { data } =  await PersonRepository.list(params)
                 this.data = data.data;
                 this.loading = false;
@@ -286,7 +286,7 @@
             },
             async listgroupsFulls() {
                 try {
-                    let {data} =  await CategoryRepository.list({});
+                    let { data } =  await CategoryRepository.list({});
                     this.facultiesWithCategoriesChildren = data;
                 } catch (error) { this.error(error); }
             },
@@ -337,10 +337,10 @@
                 return type;
             },
             error (message) {
-                this.$message.error(message||'Error al procesar');
+                this.$message.error(message || 'Error al procesar');
             },
             success (message) {
-                this.$message.success(message||'Proceso Correcto');
+                this.$message.success(message || 'Proceso Correcto');
             },
             viewDetails(id) {
                 let dataPerson = this.data.find(item => item.id == id);
@@ -373,16 +373,16 @@
                     if (!this.person.organization_id) throw ("Escuela es obligatorio");
                     if (!this.person.degree) throw ("Grado es obligatorio");
 
-                    this.loading=true;
+                    this.loading = true;
                     let payload = { ...this.person };
                     payload.status = this.person.status ? 1 : 0;
                     delete payload.faculty_id;
                     delete payload.fullname;
                     await PersonRepository.save(payload)
-                    this.showModal=false;
+                    this.showModal = false;
                     this.success();
                     this.fetch();
-                    this.loading=false;
+                    this.loading = false;
                 } catch (error) {
                     if( error.response && error.response.data ) error = error.response.data.message;
                     this.error(error);
@@ -400,7 +400,7 @@
                 this.groups = [];
                 this.lines = [];
                 this.professionalSchoolsOfAFaculty = [];
-                this.showModal=true;
+                this.showModal = true;
             },
             listSchoolsOfAFaculty() { // obtengo las escuelas de una facultad
                 this.professionalSchoolsOfAFaculty = this.faculties.find( e => e.id == this.person.faculty_id).children.map(e=>({id:e.id,name:e.name}));
@@ -417,6 +417,11 @@
             edit(id) {
                 let dataPerson = this.data.find(item => item.id == id);
                 this.person = { ...dataPerson };
+
+                this.areas = [];
+                this.groups = [];
+                this.lines = [];
+                this.professionalSchoolsOfAFaculty = [];
 
                 // this.person.organization_id es la escuela de la facultad
                 if (this.person.organization_id) {

@@ -82,7 +82,7 @@
                     </a-form-model-item>
 
                     <a-form-model-item label="Escuela" prop="organization">
-                        <!-- <a-select v-model="person.organization_id" placeholder="Seleccione una Escuela" :disabled="!allowEditCollege"> --->
+                        <!-- <a-select v-model="person.organization_id" placeholder="Seleccione una Escuela" :disabled="!allowEditCollege"> -->
                         <a-select v-model="person.organization_id" placeholder="Seleccione una Escuela">
                             <a-select-option v-for="item in professionalSchoolsOfAFaculty" :value="item.id" :key="item.id" :title="item.name">
                                 {{item.name}}
