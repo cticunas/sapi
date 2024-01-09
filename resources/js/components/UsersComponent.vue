@@ -39,7 +39,7 @@
             <span slot="action" slot-scope="text,record">
                 <a href="javascript:;" @click="viewDetails(record.id)" title="Usuario" v-if="record.user_id && user_logged.role_id==ADMIN_ROLE"><a-icon type="user" /></a>
                 <a-divider type="vertical" />
-                <a href="javascript:;" @click="edit(record.id)" title="Editar"><a-icon type="edit" /></a>
+                <a href="javascript:;" @click="editPerson(record.id)" title="Editar"><a-icon type="edit" /></a>
                 <a-divider type="vertical" />
                 <a-popconfirm v-if="data.length" title="Seguro?" @confirm="() => remove(record.id)" ok-text="Si" cancel-text="No">
                     <a href="javascript:;" title="Eliminar"><a-icon type="delete" /></a>
@@ -414,7 +414,7 @@
             listLinesOfAFaculty() {  // obtengo las lineas de una facultad
                 this.lines = this.groups.find( e => e.id == this.person.group_id).children;
             },
-            edit(id) {
+            editPerson(id) {
                 let dataPerson = this.data.find(item => item.id == id);
                 this.person = { ...dataPerson };
 

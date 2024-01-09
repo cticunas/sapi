@@ -84,24 +84,25 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryI{
 		$lines=DB::table('plan_categories')
 		->join('categories','plan_categories.category_id','=','categories.id')
 		->where($conditions)->get();
-		foreach ($lines->toArray() as $line) {
-			$group=DB::table('categories')->where(['id'=>$line->parent_id])->first();
 
-			//$program=DB::table('categories')->where(['id'=>$group->parent_id])->first();
-			$index = array_search($group->id, $groups_ids);
-			if ($index === false ) {//no encuentra
-				$groups[]=[
-					'id'=>$group->id,
-					'name'=>$group->name,
-					'organization_id'=>$group->organization_id,
-					'children'=>[$line]
-				];
-				$groups_ids[]=$group->id;
-			}else{
-				$groups[$index]['children'][]=$line;
-			}
-		}
-		return $groups;
+		// foreach ($lines->toArray() as $line) {
+		// 	$group=DB::table('categories')->where(['id'=>$line->parent_id])->first();
+
+		// 	//$program=DB::table('categories')->where(['id'=>$group->parent_id])->first();
+		// 	$index = array_search($group->id, $groups_ids);
+		// 	if ($index === false ) {//no encuentra
+		// 		$groups[]=[
+		// 			'id'=>$group->id,
+		// 			'name'=>$group->name,
+		// 			'organization_id'=>$group->organization_id,
+		// 			'children'=>[$line]
+		// 		];
+		// 		$groups_ids[]=$group->id;
+		// 	}else{
+		// 		$groups[$index]['children'][]=$line;
+		// 	}
+		// }
+		return $lines;
 	}
 
 	public function get_members($id){

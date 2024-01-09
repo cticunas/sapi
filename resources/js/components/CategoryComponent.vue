@@ -100,7 +100,7 @@ export default {
     methods:{
         async fetch(params = {}){
             // if(this.filter.search) params.search=this.filter.search;
-            let {data} =  await CategoryRepository.list(params);
+            let { data } =  await CategoryRepository.list(params);
             // console.log(data);
             for(let i=0; i<data.length; i++){
                 data[i].dragDisabled = true;
