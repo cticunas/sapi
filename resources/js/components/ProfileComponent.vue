@@ -179,7 +179,7 @@
 
             await this.listgroupsFulls(); // obtengo las facultades, areas, grupos y lineas
             await this.fetch(); // informacion del usuario
-            await this.listCollege(); // obtengo las facultades
+            await this.listFaculties(); // obtengo las facultades
             this.pictureKey++;
 
             // para evaluar a persona que aun no se ha registrado
@@ -243,7 +243,7 @@
                     this.error(error);
                 }
             },
-            async listCollege(){
+            async listFaculties(){
                 const { data } = await OrganizationRepository.list();
                 this.faculties = data;
             },
