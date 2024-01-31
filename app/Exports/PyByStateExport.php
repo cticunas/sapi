@@ -11,18 +11,19 @@ use Maatwebsite\Excel\Concerns\WithStyles;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
-class SuneduExport implements FromView,WithColumnFormatting,ShouldAutoSize,WithStyles
+class PyByStateExport implements FromView,WithColumnFormatting,ShouldAutoSize,WithStyles
 {
     use Exportable;
     function __construct($data)
     {
-        $this->data=$data['data'];
+        $this->data = $data['data'];
+        $this->type_research = $data['type_research'];
         //dd($list);
     }
 
     public function view(): View
     {
-        return view('reports/sunedu_excel',['data'=>$this->data,'i'=>1]);
+        return view('reports/py_by_state_excel',['data'=>$this->data, 'i'=>1, 'type_research'=>$this->type_research]);
     }
     public function columnFormats(): array
     {

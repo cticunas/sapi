@@ -35,6 +35,60 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryI{
         return $faculties;
     }
 
+    public function number_of_investigations($params) {
+        // select  distinct(author_id), r.line_id from research_authors oa inner join research r on r.id = oa.research_id where r.status = 1 and (research_state_id=3 or research_state_id=4))t where t.line_id = categories.id) as author_count
+
+        // $fields = "categories.id, categories.name, categories.type, categories.organization_id";
+        $fields = "categories.id";
+        if($params['category_type'] == 'research.group_id' || $params['category_type'] == 'research.line_id') {
+            $conditions = [['research.status', '=', 1], ['categories.organization_id', '=', $params['faculty_id']], ['categories.parent_id', '=', $params['parent_id']]];
+        } else {
+            $conditions = [['research.status', '=', 1], ['categories.organization_id', '=', $params['faculty_id']], ['categories.parent_id', '=', null]];
+        }
+        $fields_research_count = "$fields, COUNT(categories.id) as research_count";
+        $list_research_count =  DB::table('research')
+                    ->select(DB::raw($fields_research_count))
+                    ->join('categories', 'categories.id', '=', $params['category_type'])
+                    ->where($conditions)
+                    ->whereIn('research.research_state_id', [3, 4])
+                    ->groupBy('categories.id')
+                    ->get();
+
+        $fields_thesis_count = "$fields, COUNT(categories.id) as thesis_count";
+        $list_thesis_count = DB::table('research')
+                    ->select(DB::raw($fields_thesis_count))
+                    ->join('categories', 'categories.id', '=', $params['category_type'])
+                    ->where($conditions)
+                    ->whereIn('research.research_state_id', [3, 4])
+                    ->where('research.type_research', '1')
+                    ->groupBy('categories.id')
+                    ->get();
+
+        $fields_published_count = "$fields, COUNT(categories.id) as published_count";
+        $list_published_count = DB::table('research')
+                    ->select(DB::raw($fields_published_count))
+                    ->join('categories', 'categories.id', '=', $params['category_type'])
+                    ->join('outcomes', 'outcomes.research_id', '=', 'research.id')
+                    ->where($conditions)
+                    ->where('outcomes.status', 1)
+                    ->where('outcomes.type', 4)
+                    ->whereIn('research.research_state_id', [3, 4])
+                    ->groupBy('categories.id')
+                    ->get();
+
+        $fields_external_count = "$fields, COUNT(categories.id) as published_count";
+        $list_external_count = DB::table('research')
+                    ->select(DB::raw($fields_external_count))
+                    ->join('categories', 'categories.id', '=', $params['category_type'])
+                    ->where($conditions)
+                    ->where('research.external', 1)
+                    ->whereIn('research.research_state_id', [3, 4])
+                    ->groupBy('categories.id')
+                    ->get();
+
+        return [$list_research_count, $list_thesis_count, $list_published_count, $list_external_count];
+    }
+
 	// public function listTree($params){
 	// 	$data=[];
 	// 	$conditions=['status'=>1];
@@ -106,29 +160,29 @@ class CategoryRepository extends BaseRepository implements CategoryRepositoryI{
 	}
 
 	public function get_members($id){
-		$conditions=['research.program_id'=>$id,'people.status'=>1];
-    $q=DB::table('people')
-		->select('people.*')
-		->distinct()
-		->join('research_authors',"research_authors.author_id",'=','people.id')
-		->join('research',"research_authors.research_id",'=','research.id')
-		->where($conditions)
-		//->orWhere(['research.program_id'=>$id,'people.status'=>1])
-		->get();
-    return $q;
+		$conditions = ['research.program_id'=>$id,'people.status'=>1];
+        $q = DB::table('people')
+            ->select('people.*')
+            ->distinct()
+            ->join('research_authors',"research_authors.author_id",'=','people.id')
+            ->join('research',"research_authors.research_id",'=','research.id')
+            ->where($conditions)
+            //->orWhere(['research.program_id'=>$id,'people.status'=>1])
+            ->get();
+        return $q;
 	}
 
-	public function all($params){
+	public function all($params) {
 		$conditions=['status'=>1];
 		$q=DB::table('categories')->where($conditions);
 		return $q->latest()->paginate(10);
 	}
 
-	public function save($params){
-		if(array_key_exists('id',$params)){
+	public function save($params) {
+		if(array_key_exists('id',$params)) {
 			$o = $this->model->find($params['id']);
 			$o->update($params);
-		}else{
+		}else {
 			$o = $this->model->create($params);
 		}
 		return $o;

@@ -11,18 +11,22 @@ use Maatwebsite\Excel\Concerns\WithStyles;
 use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
 use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
 
-class SuneduExport implements FromView,WithColumnFormatting,ShouldAutoSize,WithStyles
+class PyByPeriodExport implements FromView,WithColumnFormatting,ShouldAutoSize,WithStyles
 {
     use Exportable;
     function __construct($data)
     {
         $this->data=$data['data'];
+        $this->school = $data['school'];
+        $this->type_research = $data['type_research'];
+        $this->state = $data['state'];
+        $this->year = $data['year'];
         //dd($list);
     }
 
     public function view(): View
     {
-        return view('reports/sunedu_excel',['data'=>$this->data,'i'=>1]);
+        return view('reports/py_by_period_excel',['data'=>$this->data,'i'=>1, 'school'=>$this->school, 'type_research'=>$this->type_research, 'state'=>$this->state, 'year'=>$this->year]);
     }
     public function columnFormats(): array
     {

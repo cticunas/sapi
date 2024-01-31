@@ -7,6 +7,9 @@ export default {
     list_outcomes(params){
         return backend.get(`${resource}/public_list`,{params})
     },
+    list_outcomes_new(params){
+        return backend.get(`${resource}/public_list_new`,{params})
+    },
     list_outcomes_by_year(params){
         return backend.get(`${resource}/public_list_by_year`,{params})
     },
@@ -14,7 +17,7 @@ export default {
         if('id' in payload)  return backend.put(`${resource}/${payload.id}`,payload)
         return backend.post(`${resource}`,payload)
     },
-    
+
     listStatus(params){
         return backend.get(`${resource}/list_status`,{params})
     },

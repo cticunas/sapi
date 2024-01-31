@@ -25,6 +25,9 @@ Route::get("person/get_authors",'API\PersonController@get_authors');
 Route::get("person/roles",'API\PersonController@roles');
 Route::get("person/author_activity/{id}",'API\PersonController@get_author_Activity');
 Route::get("research/public_list",'API\ResearchController@public_list');
+
+Route::get("research/public_list_new",'API\ResearchController@public_list_new');
+
 Route::get("research/public_list_by_year",'API\ResearchController@public_list_by_year');
 Route::get("research/list_status",'API\ResearchController@list_status');
 Route::get("research/py_by_author",'API\ResearchController@py_by_author');
@@ -43,6 +46,7 @@ Route::get("research/certified",'API\ResearchController@certified_by_author');
 Route::get("plan/list_lines",'API\PlanController@list_lines');
 Route::post("plan/save_line_actives",'API\PlanController@save_line_actives');
 Route::get("category/list_programs_and_lines",'API\CategoryController@list_programs_and_lines');
+Route::get("category/number_of_investigations",'API\CategoryController@number_of_investigations');
 Route::get("outcome/incentives",'API\OutcomeController@incentives');
 Route::get("research/py_by_period",'API\ResearchController@py_by_period');
 Route::post("outcome/approved",'API\OutcomeController@save_pending_outcomes');
@@ -52,7 +56,7 @@ Route::get("user/loginbyoffice",'API\UserController@loginbyoffice');
 Route::get("person/incentives_list",'API\PersonController@incentives_list');
 Route::get("category/{id}/members",'API\CategoryController@get_members');
 Route::get("master/list_states",'API\MasterController@list_states');
-//Route::middleware('auth.api')->get('user/access', 'API\UserController@list_access');   
+//Route::middleware('auth.api')->get('user/access', 'API\UserController@list_access');
 Route::apiResources([
     'person' => 'API\PersonController',
     'user' => 'API\UserController',
@@ -69,5 +73,3 @@ Route::apiResources([
     'author'=>'API\AuthorController',
     'outcome'=>'API\OutcomeController',
     ]);
-
-

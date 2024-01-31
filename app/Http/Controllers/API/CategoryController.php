@@ -20,6 +20,13 @@ class CategoryController extends Controller
         return $tree;
     }
 
+    public function number_of_investigations(Request $request)
+    {
+        $params=$request->all();
+        $list=$this->repository->number_of_investigations($params);
+        return $list;
+    }
+
     public function list_programs_and_lines(Request $request)
     {
         $params=$request->all();

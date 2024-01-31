@@ -132,7 +132,6 @@ export default {
         },
         add(parent){
             try {
-                // console.log(parent )
                 this.parent=parent;
                 this.category={};
                 // if( parent.type ){ //es un category
@@ -146,6 +145,7 @@ export default {
                 // }
                 if(parent.type){
                     this.category.parent_id=parent.id;
+                    this.category.organization_id = parent.organization_id;
                     // if (parent.type == 'Programa') this.category.type='Area';
                     if (parent.type == 'Area') this.category.type='Grupo';
                     else if (parent.type == 'Grupo') this.category.type='Linea';
@@ -159,13 +159,13 @@ export default {
                 this.error(error)
             }
         },
-        async save(){
+        async save() {
             try {
                 if (!this.category.code) throw ('El código es requerido');
                 if (!this.category.name) throw ('El nombre es requerido');
 
-                this.showModal=false;
-                this.loading=true;
+                this.showModal = false;
+                this.loading = true;
                 let payload = this.category;
                 await CategoryRepository.save(payload)
                 this.success();
@@ -174,8 +174,7 @@ export default {
                 this.error(error);
             }
         },
-        edit(model){
-            // console.log(model)
+        edit(model) {
             this.category = {
                 id: model.id,
                 name:model.name,
@@ -187,9 +186,9 @@ export default {
             };
             this.showModal = true;
         },
-        async remove(model){
+        async remove(model) {
             try {
-                this.loading=true;
+                this.loading = true;
                 await CategoryRepository.delete(model.id)
                 this.success();
                 this.fetch();
