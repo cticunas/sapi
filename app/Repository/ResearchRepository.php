@@ -9,14 +9,14 @@ use Illuminate\Support\Str;
 
 class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 
-  public function __construct(Research $model){
-    parent::__construct($model);
-  }
+    public function __construct(Research $model){
+        parent::__construct($model);
+    }
 
 	private $r_states=['-','No def','Nuevo','En Ejecución', 'Culminado', 'Suspendido','Anulado'];
 	private $r_types=[ '-','Tesis','Inv. Docente','Experiencia Profesional', 'Proyecto Innovacion'];
 	private $grades=[ '-','Pregrado','Posgrado'];
-   
+
   public function all($params){
 		$sql_authors = parent::getResearchAuthorsSqlPart();
     $conditions=['research.status'=>1];
@@ -28,36 +28,36 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 		DB::raw("$date_init_f as date_init, $date_end_f as date_end,	$sql_authors  as authors"));
 
 		if (array_key_exists("type_research", $params)) {
-			$conditions[]=['research.type_research','=', $params['type_research']]; 
+			$conditions[]=['research.type_research','=', $params['type_research']];
 		}
 		if( array_key_exists("author_id",$params) ){
 			$q -> join('research_authors', 'research_id','=','research.id');
-			$conditions[]=['author_id','=', $params['author_id']]; 
-			$conditions[]=['research_authors.status','=', '1']; 
+			$conditions[]=['author_id','=', $params['author_id']];
+			$conditions[]=['research_authors.status','=', '1'];
 		}
 		if( array_key_exists("faculty_id",$params) ){
 			$q->join('organizations', "organizations.id", '=', 'research.organization_id');
-			$conditions[]=['organizations.parent_id','=', $params['faculty_id']]; 
+			$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
 		}
 		if( array_key_exists("group_id",$params) ){
 			$q->join('categories', "categories.id", '=', 'research.line_id');
-			$conditions[]=['categories.parent_id','=', $params['group_id']]; 
+			$conditions[]=['categories.parent_id','=', $params['group_id']];
 		}
 		if( array_key_exists("organization_id",$params) ){
 				$q->join('organizations', "organizations.id", '=', 'research.organization_id');
-				$conditions[]=['organization_id','=', $params['organization_id']]; 
+				$conditions[]=['organization_id','=', $params['organization_id']];
 		}
 		if (array_key_exists('own_research', $params)) {
-			$conditions[]=['own_research','=', $params['own_research']]; 
+			$conditions[]=['own_research','=', $params['own_research']];
 		}
 		if (array_key_exists('external', $params)) {
-			$conditions[]=['external','=', $params['external']]; 
+			$conditions[]=['external','=', $params['external']];
 		}
 		if (array_key_exists('incentive', $params)) {
-			$conditions[]=['incentive','=', $params['incentive']]; 
+			$conditions[]=['incentive','=', $params['incentive']];
 		}
 		$q -> where($conditions);
-		if( array_key_exists("text",$params) ){ 
+		if( array_key_exists("text",$params) ){
 			$q->whereRaw("(LOWER(CONCAT(research.title)) like LOWER('%$params[text]%') OR LOWER($sql_authors) like LOWER('%$params[text]%'))");
 		}
 		if (array_key_exists("from", $params)) {
@@ -66,7 +66,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 		if (array_key_exists("state", $params)) {
 			$q->whereRaw("research.research_state_id = '$params[state]' ");
 		}
-		
+
 		if (array_key_exists("in_finish", $params)) {// inv. de estado no culminadas
 			// $now = date('Y-m-d');
 			$sqlHasFinalInform = "(select count(o.id) from outcomes o where o.status=1 and o.type=3 and o.research_id=research.id ) > 0 AND research.research_state_id != 4 ";
@@ -103,127 +103,221 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 				if( $inc_dni ) $author['dni']= $a_[$i++];
 				//dd($author);
 				$authors[] =	$author ;
-		} 
+		}
 		}
 
 		return $authors;
 	}
 
-	public function public_list($params){
-		$group_by = array_key_exists("group_by",$params) ? $params['group_by'] : false;
+    public function public_list_new($params) {
+        // dd($params);
+        $sql_authors = parent::getOutcomeAuthorsSqlPart();
+
+        $outcome_types = [];
+        if (array_key_exists("type", $params)) {
+            // $params['type'] desde el front viene con el valor 4
+            $conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1], ['outcomes.type', '=', $params['type']]];
+        } else {
+            $outcome_types = [1, 4]; // 1: Proyecto, 4: Articulo
+            $conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1]];
+        }
+        $sql_research_authors = parent::getResearchAuthorsSqlPart();
+        $fields = "outcomes.id,outcomes.type,outcomes.name,outcomes.date,outcomes.url,outcomes.doi,outcomes.journal, $sql_authors as authors, indexed";
+
+        if (array_key_exists("external", $params)) $conditions[] = parent::add_condition('external', $params);
+        if (array_key_exists("type_research", $params)) $conditions[] = parent::add_condition('type_research', $params);
+
+        $q = DB::table('outcomes')
+            ->select(DB::raw($fields))
+            ->join('research', "research.id", '=', 'outcomes.research_id');
+
+        if (array_key_exists("line_id", $params)) $conditions[] = parent::add_condition('line_id', $params);
+        if (array_key_exists("group_id", $params)) $conditions[] = parent::add_condition('group_id', $params);
+		if (array_key_exists("area_id", $params)) $conditions[] = parent::add_condition('area_id', $params);
+
+        $q->where($conditions);
+        $q->whereRaw("(research.research_state_id = 3 OR research.research_state_id = 4)");
+        if (array_key_exists("text", $params)) {
+            $q->whereRaw("(LOWER(CONCAT(outcomes.name, research.title)) like LOWER('%$params[text]%') OR LOWER($sql_research_authors) like LOWER('%$params[text]%'))");
+        }
+        if(array_key_exists("from", $params)) {
+            $q->whereRaw("outcomes.date between '$params[from]' and '$params[to]' ");
+        }
+        if($outcome_types) {
+            $q->whereIn('outcomes.type', $outcome_types);
+        }
+
+        $query = $q;
+		$data = $query->orderBy('date', 'desc')->paginate(10);
+
+		return $data;
+	}
+
+    public function public_list_by_year($params) {
+        $outcome_types = [];
+        if (array_key_exists("type", $params)) {
+            // $params['type'] desde el front viene con el valor 4
+            $conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1], ['outcomes.type', '=', $params['type']]];
+        } else {
+            $outcome_types = [1, 4]; // 1: Proyecto, 4: Articulo
+            $conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1]];
+        }
+		$group_by = $params['group_by'];
 		$sql_authors = parent::getOutcomeAuthorsSqlPart();
-	
+
 		$sql_research_authors = parent::getResearchAuthorsSqlPart();
 		$year_part= parent::getYearSqlPart('outcomes.date');
-		$fields = $group_by?"$year_part as year,count(outcomes.id) as total":"outcomes.id,outcomes.type,outcomes.name,outcomes.date,outcomes.url,outcomes.doi,outcomes.journal, $sql_authors as authors, indexed";
-		$article = 4;
-		//Condicion para Articulo
-		$conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1], ['outcomes.type', '=', $article]];
-		if (array_key_exists("line_id", $params)) $conditions[] = parent::add_condition('line_id', $params);
-		if (array_key_exists("program_id", $params)) $conditions[] = parent::add_condition('program_id', $params);
-	
+		// $fields = $group_by?"$year_part as year,count(outcomes.id) as total":"outcomes.id,outcomes.type,outcomes.name,outcomes.date,outcomes.url,outcomes.doi,outcomes.journal, $sql_authors as authors, indexed";
+		$fields = "$year_part as year,count(outcomes.id) as total";
 		if (array_key_exists("external", $params)) $conditions[] = parent::add_condition('external', $params);
 		if (array_key_exists("type_research", $params)) $conditions[] = parent::add_condition('type_research', $params);
-		$q = DB::table('outcomes')
-		->select(DB::raw($fields))
-		->join('research', "research.id", '=', 'outcomes.research_id');
-		
-		if( array_key_exists("group_id",$params) ){
-			$q->join('categories', "categories.id", '=', 'research.line_id');
-			$conditions[]=['categories.parent_id','=', $params['group_id']];
+        $q = DB::table('outcomes')
+            ->select(DB::raw($fields))
+            ->join('research', "research.id", '=', 'outcomes.research_id');
+        if(array_key_exists("faculty_id", $params)) {
+			$q->join('organizations', "organizations.id", '=', 'research.organization_id');
+			$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
 		}
 		$q->where($conditions);
 		$q->whereRaw("(research.research_state_id = 3 OR research.research_state_id = 4)");
-		if (array_key_exists("text", $params)) {
+		if(array_key_exists("text", $params)) {
 			$q->whereRaw("(LOWER(CONCAT(outcomes.name, research.title)) like LOWER('%$params[text]%') OR LOWER($sql_research_authors) like LOWER('%$params[text]%'))");
-		}
-		if( array_key_exists("faculty_id",$params) ){
-			$q->join('organizations', "organizations.id", '=', 'research.organization_id');
-			$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
 		}
 		if (array_key_exists("from", $params)) {
 			$q->whereRaw("outcomes.date between '$params[from]' and '$params[to]' ");
 		}
-		if($group_by){
-			if( $group_by=='year') $group_by= $year_part;
-			$q->groupBy((DB::raw($group_by)));
-		}
-		//Condicion para Proyecto
-		$proy_conditions = [
-			['research.status', '=', 1],
-			['outcomes.status', '=', 1],
-			['outcomes.type', '=', 1],
-			[DB::raw("(select case count(ro.id) when 0 then null else 1 end from outcomes ro where ro.research_id=research.id and ro.type=$article)")]
-		];
-		if (array_key_exists("line_id", $params)) $proy_conditions[] = parent::add_condition('line_id', $params);
-		if (array_key_exists("program_id", $params)) $proy_conditions[] = parent::add_condition('program_id', $params);
-		
-		if (array_key_exists("external", $params)) $proy_conditions[] = parent::add_condition('external', $params);
-		if (array_key_exists("type_research", $params)) $proy_conditions[] = parent::add_condition('type_research', $params);
-		
-		$q2 = DB::table('outcomes')
-			->select(DB::raw($fields))->join('research', "research.id", '=', 'outcomes.research_id');
-		if( array_key_exists("group_id",$params) ){
-			$q2->join('categories', "categories.id", '=', 'research.line_id');
-			$proy_conditions[]=['categories.parent_id','=', $params['group_id']];
-		}
-		$q2->where($proy_conditions);
+        if($outcome_types) {
+            $q->whereIn('outcomes.type', $outcome_types);
+        }
+		$q->groupBy((DB::raw($year_part)));
 
-		$q2->whereRaw("(research.research_state_id = 3 OR research.research_state_id = 4)");
-		if (array_key_exists("text", $params)) {
-			$q2->whereRaw("(LOWER(CONCAT(outcomes.name, research.title)) like LOWER('%$params[text]%') 
-			OR $sql_research_authors like LOWER('%$params[text]%'))");
-		}
-		if( array_key_exists("faculty_id",$params) ){
-			$q2->join('organizations', "organizations.id", '=', 'research.organization_id');
-			$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
-		}
-		if (array_key_exists("from", $params)) {
-			$q2->whereRaw("outcomes.date between '$params[from]' and '$params[to]' ");
-		}
-		if (array_key_exists("type", $params)) {
-			if ($params['type'] == $article) {
-				$query = $q;
-			} else {
-				$query = $q2;
-			}
-		} else {
-			$query = $q2->union($q);
-		}
-		// dd($query->orderBy('date', 'desc')->toSql());
-		//$q2->union($q);
-		// echo( $query->orderBy('date', 'desc')->toSql());exit;
-		//return $q2->get();
-		
-		if($group_by){
-			if( $group_by=='year') $group_by=  parent::getYearSqlPart("outcomes.date");
-		  $query->groupBy((DB::raw($group_by)));
-			if( array_key_exists("sql", $params) ) exit($query->toSql());
-			$data = $query->orderByRaw(' year ')->get();
-		}else{
-			$data =$query->orderBy('date', 'desc')->paginate(10);
-		}
-	
+        $query = $q;
+        $data = $query->orderByRaw('year')->get();
 		return $data;
 	}
 
+	// public function public_list($params){
+    //     // dd($params);
+	// 	$group_by = array_key_exists("group_by",$params) ? $params['group_by'] : false;
+	// 	$sql_authors = parent::getOutcomeAuthorsSqlPart();
+
+	// 	$sql_research_authors = parent::getResearchAuthorsSqlPart();
+	// 	$year_part= parent::getYearSqlPart('outcomes.date');
+	// 	$fields = $group_by?"$year_part as year,count(outcomes.id) as total":"outcomes.id,outcomes.type,outcomes.name,outcomes.date,outcomes.url,outcomes.doi,outcomes.journal, $sql_authors as authors, indexed";
+	// 	$article = 4;
+	// 	//Condicion para Articulo
+	// 	$conditions = [['research.status', '=', 1], ['outcomes.status', '=', 1], ['outcomes.type', '=', $article]];
+	// 	if (array_key_exists("line_id", $params)) $conditions[] = parent::add_condition('line_id', $params);
+	// 	if (array_key_exists("program_id", $params)) $conditions[] = parent::add_condition('program_id', $params);
+
+	// 	if (array_key_exists("external", $params)) $conditions[] = parent::add_condition('external', $params);
+	// 	if (array_key_exists("type_research", $params)) $conditions[] = parent::add_condition('type_research', $params);
+    //     $q = DB::table('outcomes')
+	// 	->select(DB::raw($fields))
+	// 	->join('research', "research.id", '=', 'outcomes.research_id');
+
+	// 	if( array_key_exists("group_id",$params) ){
+	// 		$q->join('categories', "categories.id", '=', 'research.line_id');
+	// 		$conditions[]=['categories.parent_id','=', $params['group_id']];
+	// 	}
+	// 	$q->where($conditions);
+	// 	$q->whereRaw("(research.research_state_id = 3 OR research.research_state_id = 4)");
+	// 	if (array_key_exists("text", $params)) {
+	// 		$q->whereRaw("(LOWER(CONCAT(outcomes.name, research.title)) like LOWER('%$params[text]%') OR LOWER($sql_research_authors) like LOWER('%$params[text]%'))");
+	// 	}
+	// 	if( array_key_exists("faculty_id",$params) ){
+	// 		$q->join('organizations', "organizations.id", '=', 'research.organization_id');
+	// 		$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
+	// 	}
+	// 	if (array_key_exists("from", $params)) {
+	// 		$q->whereRaw("outcomes.date between '$params[from]' and '$params[to]' ");
+	// 	}
+	// 	if($group_by){
+	// 		if( $group_by=='year') $group_by= $year_part;
+	// 		$q->groupBy((DB::raw($group_by)));
+	// 	}
+	// 	//Condicion para Proyecto
+	// 	$proy_conditions = [
+	// 		['research.status', '=', 1],
+	// 		['outcomes.status', '=', 1],
+	// 		['outcomes.type', '=', 1],
+	// 		[DB::raw("(select case count(ro.id) when 0 then null else 1 end from outcomes ro where ro.research_id=research.id and ro.type=$article)")]
+	// 	];
+	// 	if (array_key_exists("line_id", $params)) $proy_conditions[] = parent::add_condition('line_id', $params);
+	// 	if (array_key_exists("program_id", $params)) $proy_conditions[] = parent::add_condition('program_id', $params);
+
+	// 	if (array_key_exists("external", $params)) $proy_conditions[] = parent::add_condition('external', $params);
+	// 	if (array_key_exists("type_research", $params)) $proy_conditions[] = parent::add_condition('type_research', $params);
+
+	// 	$q2 = DB::table('outcomes')
+	// 		->select(DB::raw($fields))->join('research', "research.id", '=', 'outcomes.research_id');
+	// 	if( array_key_exists("group_id",$params) ){
+	// 		$q2->join('categories', "categories.id", '=', 'research.line_id');
+	// 		$proy_conditions[]=['categories.parent_id','=', $params['group_id']];
+	// 	}
+	// 	$q2->where($proy_conditions);
+
+	// 	$q2->whereRaw("(research.research_state_id = 3 OR research.research_state_id = 4)");
+	// 	if (array_key_exists("text", $params)) {
+	// 		$q2->whereRaw("(LOWER(CONCAT(outcomes.name, research.title)) like LOWER('%$params[text]%')
+	// 		OR $sql_research_authors like LOWER('%$params[text]%'))");
+	// 	}
+	// 	if( array_key_exists("faculty_id",$params) ){
+	// 		$q2->join('organizations', "organizations.id", '=', 'research.organization_id');
+	// 		$conditions[]=['organizations.parent_id','=', $params['faculty_id']];
+	// 	}
+	// 	if (array_key_exists("from", $params)) {
+	// 		$q2->whereRaw("outcomes.date between '$params[from]' and '$params[to]' ");
+	// 	}
+	// 	if (array_key_exists("type", $params)) {
+	// 		if ($params['type'] == $article) {
+	// 			$query = $q;
+	// 		} else {
+	// 			$query = $q2;
+	// 		}
+	// 	} else {
+	// 		// $query = $q2->union($q); // original
+    //         $query = $q2;
+	// 	}
+	// 	// dd($query->orderBy('date', 'desc')->toSql());
+	// 	//$q2->union($q);
+	// 	// echo( $query->orderBy('date', 'desc')->toSql());exit;
+	// 	//return $q2->get();
+
+	// 	if($group_by){
+	// 		if( $group_by=='year') $group_by=  parent::getYearSqlPart("outcomes.date");
+	// 	    $query->groupBy((DB::raw($group_by)));
+	// 		if( array_key_exists("sql", $params) ) exit($query->toSql());
+	// 		$data = $query->orderByRaw(' year ')->get();
+	// 	}else{
+	// 		$data =$query->orderBy('date', 'desc')->paginate(10);
+	// 	}
+
+	// 	return $data;
+	// }
+
 	public function py_by($params){
 		$sql_authors = parent::getResearchAuthorsSqlPart();
-		$fields = "research.*, research_states.name as research_state, $sql_authors  as authors";
+		$fields = "research.*, research_states.name as research_state, $sql_authors  as authors, area.name as area, group_category.name as group, line.name as line";
 		$conditions = [['research.status', '=', 1]];
 		$conditions = [['research.external', '=', 0]];
+        // dd($params);
 		if (array_key_exists("grade", $params)) { $conditions[] = ['grade', '=', $params['grade']];}
 		if (array_key_exists("type_research", $params)) { $conditions[] = ['type_research', '=', $params['type_research']]; }
-		if (array_key_exists("organization_id", $params)) { $conditions[] = ['organization_id', '=', $params['organization_id']]; }
+		if (array_key_exists("organization_id", $params)) { $conditions[] = ['research.organization_id', '=', $params['organization_id']]; }
 		if (array_key_exists("research_state_id", $params)) {$conditions[] = ['research_state_id', '=', $params['research_state_id']];}
-
+        // dd($fields);
 		$q = DB::table('research')
 			->select(DB::raw($fields))
 			->join('research_states', 'research_states.id', '=', 'research.research_state_id')
+            ->join('categories as area', 'area.id', '=', 'research.area_id')
+            ->join('categories as group_category', 'group_category.id', '=', 'research.group_id')
+            ->join('categories as line', 'line.id', '=', 'research.line_id')
 			->where($conditions);
-			if (array_key_exists("from", $params))
-			 {$q->whereRaw("date_init  BETWEEN '$params[from]' AND '$params[to]'") ;}
-			
+			if (array_key_exists("from", $params)) {
+                $q->whereRaw("date_init  BETWEEN '$params[from]' AND '$params[to]'");
+            }
+
 		return $q->orderBy('research.id', 'desc')->get();
 		//echo( $q->toSql());exit;
 	}
@@ -241,7 +335,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 		if (array_key_exists("grade", $params)) { $conditions[] = ['grade', '=', $params['grade']];}
 		if (array_key_exists("type_research", $params)) { $conditions[] = ['type_research', '=', $params['type_research']]; }
 		if (array_key_exists("author_id", $params)) {$conditions[] = ['people.id', '=', $params['author_id']];}
-	
+
 		$q = DB::table('people')
 			->select(DB::raw($fields))
 			->join('research_authors', 'research_authors.author_id', '=', 'people.id')
@@ -309,24 +403,26 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 	public function sunedu_list($params)
 	{
 		$sql_authors = parent::getResearchAuthorsSqlPart();
-		$group_concat_outcome = parent::getGroupConcatSqlPart("o.id,'|',o.type");
-		$fields = "organizations.name as college,research.id,research.title,research.objectives, categories.name as line, $sql_authors as authors, date_init,date_end, budget,fin_company,fin_type,(select $group_concat_outcome from outcomes o where o.research_id=research.id and type>1 and o.status=1 group by o.research_id ) as results";
-		$conditions = [['research.status', '=', 1],['research.type_research', '=', 2],];
+        $group_concat_outcome = parent::getGroupConcatSqlPart("o.id,'|',o.type");
+        $fields = "organizations.name as college,research.id,research.title,research.objectives, area.name as area, group_category.name as group, line.name as line, $sql_authors as authors, date_init,date_end, budget,fin_company,fin_type,(select $group_concat_outcome from outcomes o where o.research_id=research.id and type>1 and o.status=1 group by o.research_id ) as results";
+        $conditions = [['research.status', '=', 1],['research.type_research', '=', 2],];
 		if (array_key_exists("research_state_id", $params)) {
 			$conditions[] = ['research_state_id','=',$params['research_state_id']];
 		}
 		$q = DB::table('research')
 			->select(DB::raw($fields))
 			->join('organizations', "organizations.id", '=', 'research.organization_id')
-			->join('categories', "research.line_id", '=', 'categories.id')
+            ->join('categories as area', 'area.id', '=', 'research.area_id')
+            ->join('categories as group_category', 'group_category.id', '=', 'research.group_id')
+            ->join('categories as line', 'line.id', '=', 'research.line_id')
 			->join('research_authors', "research_authors.research_id", '=', 'research.id')
 			->join('people', "research_authors.author_id", '=', 'people.id')
 			->where($conditions);
-			if (array_key_exists("type", $params)) {
-				$q->whereRaw("people.type='$params[type]'");
-			}
-			if (array_key_exists("from", $params)) {$q->whereRaw("date_init  BETWEEN '$params[from]' AND '$params[to]' ") ;}
-		return $q->groupBy( DB::raw('research.id, organizations.id, categories.id') )->get();
+        if (array_key_exists("type", $params)) {
+        $q->whereRaw("people.type='$params[type]'");
+        }
+		if (array_key_exists("from", $params)) {$q->whereRaw("date_init  BETWEEN '$params[from]' AND '$params[to]' ") ;}
+		return $q->groupBy( DB::raw('research.id, organizations.id, area.id, group_category.id, line.id') )->get();
 		//echo $q->toSql();exit;
 	}
 
@@ -360,7 +456,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			\App\Models\ResearchLog::create(["research_id" => $o->id, 'new_status_id' => 2, 'user_id' => $params['user_id'], 'date_at' => new \Datetime()]);
 		}
 		\App\Models\Person::where(["id"=>$params['user_id']])->update([ 'group_id'=>$params['group_id'], 'line_id'=>$params['line_id'] ]);
-		
+
 
 		if ($authors) {
 			\App\Models\ResearchAuthor::where(['research_id' => $o->id])->update(['status' => 0]);
@@ -413,33 +509,36 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 
 	public function by_period($params){
 		$sql_authors = parent::getResearchAuthorsSqlPart();
-    $conditions=[['research.status','=',1]];
-		$conditions=[['research.external','=',0]];
-		$conditions[] = parent::add_condition('type_research', $params); 
-		$conditions[] = parent::add_condition('research_state_id', $params); 
-		if(array_key_exists('grade',$params) ) $conditions[] = parent::add_condition('grade', $params); 
-		$conditions[] = $this->add_condition('organization_id', $params,'research'); 
-		$date_init_f = parent::getDateFormatSql('research.date_init','d/m/Y');
+        $conditions = [['research.status','=',1]];
+		$conditions = [['research.external','=',0]];
+		$conditions[] = parent::add_condition('type_research', $params);
+		$conditions[] = parent::add_condition('research_state_id', $params);
+		if(array_key_exists('grade',$params) ) $conditions[] = parent::add_condition('grade', $params);
+		$conditions[] = $this->add_condition('organization_id', $params,'research');
+        $date_init_f = parent::getDateFormatSql('research.date_init','d/m/Y');
 		$date_end_f = parent::getDateFormatSql('research.date_end','d/m/Y');
 		$date_at_f = parent::getDateFormatSql('research_logs.date_at','d/m/Y');
-    $fields="research.id, research.title, research.code ,$date_init_f as date_init, 	$date_end_f as date_end, $date_at_f as log_date_at, research_state_id, organizations.name as organization,$sql_authors as authors";
-    $q =DB::table('research')
-    -> select(DB::raw($fields))
-    ->join('research_logs','research.id', '=','research_logs.research_id')
-		->join('organizations','research.organization_id', '=','organizations.id')
-    ->where($conditions);
-		$year_date_at= parent::getYearSqlPart("research_logs.date_at");
-    if( array_key_exists("year",$params) ){ $q->whereRaw("$year_date_at='$params[year]'");}
-		if( array_key_exists("period",$params) ){ $q->whereRaw(  parent::getDatePart($params['period_type'],'research_logs.date_at' )."=$params[period]");}
+        $fields = "research.id, research.title, research.code, $date_init_f as date_init, $date_end_f as date_end, $date_at_f as log_date_at, research_state_id, organizations.name as organization, $sql_authors as authors, area.name as area, group_category.name as group, line.name as line";
+        // dd($fields);
 
-		
-		$q->groupBy(DB::raw("research.id, $date_at_f, organizations.id, research_logs.id "))->orderBy('research.id','asc')
-		->orderBy('research_logs.id','desc')
-		;
+        $q = DB::table('research')
+            -> select(DB::raw($fields))
+            ->join('research_logs','research.id', '=','research_logs.research_id')
+            ->join('organizations','research.organization_id', '=','organizations.id')
+            ->join('categories as area', 'area.id', '=', 'research.area_id')
+            ->join('categories as group_category', 'group_category.id', '=', 'research.group_id')
+            ->join('categories as line', 'line.id', '=', 'research.line_id')
+            ->where($conditions);
+		$year_date_at = parent::getYearSqlPart("research_logs.date_at");
+        // dd($params);
+        if( array_key_exists("year",$params) ){ $q->whereRaw("$year_date_at='$params[year]'");}
+		// if( array_key_exists("period",$params) ){ $q->whereRaw(  parent::getDatePart($params['period_type'],'research_logs.date_at' )."=$params[period]");}
+
+		$q->groupBy(DB::raw("research.id, $date_at_f, organizations.id, research_logs.id, area.id, group_category.id, line.id"))->orderBy('research.id','asc')
+		->orderBy('research_logs.id','desc');
 		// exit($q->toSql());
 		return $q->get();
-  }
-
+    }
 	public function byPeriodWord($phpWord, $section, $list, $params){
 		$cellHCentered = array('align' => 'center');
 		$cellVCentered = array('valign' => 'center');
@@ -453,14 +552,14 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			$section->addText($o['org'], ['bold'=>true]);
 			$section->addText("");
 			foreach($o['research'] as $r){
-			$section->addText($r["code"],['bold'=>true, 'size'=>8]);
-			$section->addText($r["title"]);
-			$section->addText("Responsables:",['bold'=>true, 'size'=>8]);
-			foreach($r['authors'] as $a){
-				$section->addText(($a['role']==''?'':"$a[role]: ")."$a[name]",['size'=>9]);
-				//$section->addTextBreak();
-			}
-			$section->addText("");
+                $section->addText($r["code"],['bold'=>true, 'size'=>8]);
+                $section->addText($r["title"]);
+                $section->addText("Responsables:",['bold'=>true, 'size'=>8]);
+                foreach($r['authors'] as $a){
+                    $section->addText(($a['role']==''?'':"$a[role]: ")."$a[name]",['size'=>9]);
+                    //$section->addTextBreak();
+                }
+                $section->addText("");
 			}
 			/*
 			$table = $section->addTable();
@@ -543,7 +642,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 				}
 				$listItemRun->addText(". ".$r['year']. ". ",['bold'=>true]);
 				$listItemRun->addText($r['title']);
-			}	
+			}
 		}
 	}
 
@@ -553,7 +652,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 				$section->addListItem($r['title'], 0, ['bold'=>true,], $listStyle,['alignment'=>'both']);
 		}
 	}
-	
+
 	public function constancyWord($phpWord, $section, $list, $params){
 		//dd($params);
 		$section->addText("CONSTANCIA Nº [NNN]– ".$params['author']['faculty']->code.".UNAS-T.M.",['bold'=>true, 'underline'=>'single'],['alignment'=>'center']);
@@ -576,7 +675,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 		$section->addText("Tingo María, $params[now]",null,['alignment'=>'right']);
 		$section->addText(" ");$section->addText(" ");$section->addText(" ");	$section->addText(" ");
 		$section->addText("Firma.");	$section->addText(" ");
-		$section->addText("C.c. Archivo.");		
+		$section->addText("C.c. Archivo.");
 	}
 
 	public function certifiedWord($phpWord, $section, $list, $params){
@@ -603,7 +702,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			$section->addText("Tingo María, $params[now]",null,['alignment'=>'right']);
 			$section->addText(" ");$section->addText(" ");$section->addText(" ");	$section->addText(" ");	$section->addText(" ");
 			$section->addText("Firma.");	$section->addText(" ");
-			$section->addText("C.c. Archivo.");		
+			$section->addText("C.c. Archivo.");
 	}
 
 	public function byStateWord($phpWord, $section, $data, $params){
@@ -628,7 +727,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			$table->addCell(1000)->addText($i++);
 			//$table->addCell(5000)->addText('--');
 			$table->addCell(5000)->addText($r['title'].".");
-		
+
 			$textrun=$table->addCell()->addTextRun();
 			foreach($r['authors'] as $a){
 				$textrun->addText("$a[name]" .($a['role']=='Titular'?" (T)":""  ), ['size'=>9] );
@@ -655,7 +754,7 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			$table->addCell(1000)->addText($i++);
 			//$table->addCell(5000)->addText('--');
 			$table->addCell(5000)->addText($r['title'].".");
-		
+
 			$textrun=$table->addCell()->addTextRun();
 			foreach($r['authors'] as $a){
 				$textrun->addText("$a[name]" .($a['role']=='Titular'?" (T)":""  ), ['size'=>9] );$textrun->addTextBreak();
@@ -663,6 +762,6 @@ class ResearchRepository extends BaseRepository implements ResearchRepositoryI{
 			//if($i==21) break;
 			$table->addCell(3000)->addText($r['document']);
 		}
-	
+
 	}
 }

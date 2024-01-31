@@ -46,7 +46,7 @@
                     <div style="display:flex; justify-content:space-between; margin: .5em 0 1em 0">
                         <h4> Investigadores(as) de{{ line_selected?(' la linea de '+line_selected.name) :
                                                         group_selected?('l grupo de '+group_selected.name) :
-                                                        program_selected?('l programa de '+program_selected.name) :
+                                                        area_selected?('l area de '+area_selected.name) :
                                                         ' toda la Universidad' }}</h4>
                         <a-input-search
                             style="width:40%"
@@ -80,51 +80,51 @@
 
                     <div style="width:100%">
                         <div style="padding-top: .2em;">
-                            <ul v-for="(program, program_index) in faculty_selected.children_" :key="program.id" style="list-style-type: none; padding:0; margin:0">
-                                <li style="background:#fafafa; border-bottom:1px solid #e7e7e7; padding: .9em"> <!-- PROGRAMAS -->
+                            <ul v-for="(area, area_index) in faculty_selected.children" :key="area.id" style="list-style-type: none; padding:0; margin:0">
+                                <li style="background:#fafafa; border-bottom:1px solid #e7e7e7; padding: .9em"> <!-- AREAS -->
                                     <div style="display:flex;align-items:center;justify-content:space-between">
-                                        <div  @click="toggleProgram(program_index)" style="color:#333; cursor:pointer">
-                                            <a href="javascript:;"><a-icon :type="program.showgroups?'caret-down':'caret-right'" style="padding-right:10px"/></a>
-                                            <a :title="program.type"> {{program.type}} de {{program.name}} </a>
+                                        <div @click="toggleProgram(area_index)" style="color:#333; cursor:pointer">
+                                            <a href="javascript:;"><a-icon :type="area.showgroups?'caret-down':'caret-right'" style="padding-right:10px"/></a>
+                                            <a :title="area.type"> {{area.type}} de {{area.name}} </a>
                                         </div>
                                         <div style="display:flex">
-                                            <div @click="listAuthorsByCategory(program, 'authors')" title="Investigadores" style="margin: 0 10px; cursor:pointer">
-                                                <a-badge :count="program.author_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff',fontWeight: 700, minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                            <div @click="listAuthorsByCategory(area, 'authors')" title="Investigadores" style="margin: 0 10px; cursor:pointer">
+                                                <a-badge :count="area.author_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff',fontWeight: 700, minWidth:'15px', height: '15px', lineHeight:'14px' }" >
                                                     <a-icon type="user" style="font-size:18px"/>
                                                     <a class="head-example"></a>
                                                 </a-badge>
                                             </div>
-                                            <div @click="listResearchByCategory(program, 'research')" title="Investigaciones" style="margin: 0 10px; cursor:pointer">
-                                                <a-badge :count="program.research_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff',fontWeight: 700, minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                            <div @click="listResearchByCategory(area, 'research')" title="Investigaciones" style="margin: 0 10px; cursor:pointer">
+                                                <a-badge :count="area.research_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff',fontWeight: 700, minWidth:'15px', height: '15px', lineHeight:'14px' }" >
                                                     <a-icon type="experiment" style="font-size:18px"/>
                                                     <a class="head-example" ></a>
                                                 </a-badge>
                                             </div>
-                                            <div @click="listResearchByCategory(program, 'publisheds')" title="Publicaciones" style="margin: 0 10px; cursor:pointer">
-                                                <a-badge :count="program.published_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
+                                            <div @click="listResearchByCategory(area, 'publisheds')" title="Publicaciones" style="margin: 0 10px; cursor:pointer">
+                                                <a-badge :count="area.published_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
                                                     <a-icon type="file-pdf" style="font-size:18px"/>
                                                     <a class="head-example" ></a>
                                                 </a-badge>
                                             </div>
-                                            <div @click="listResearchByCategory(program, 'thesis')" title="Tesis" style="margin: 0 10px; cursor:pointer">
-                                                <a-badge :count="program.thesis_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
+                                            <div @click="listResearchByCategory(area, 'thesis')" title="Tesis" style="margin: 0 10px; cursor:pointer">
+                                                <a-badge :count="area.thesis_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
                                                     <a-icon type="container" style="font-size:18px"/>
                                                     <a class="head-example" ></a>
                                                 </a-badge>
                                             </div>
-                                            <div @click="listResearchByCategory(program, 'externals')" title="I. Externas" style="margin: 0 10px; cursor:pointer">
-                                                <a-badge :count="program.external_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
+                                            <div @click="listResearchByCategory(area, 'externals')" title="I. Externas" style="margin: 0 10px; cursor:pointer">
+                                                <a-badge :count="area.external_count" :number-style="{ backgroundColor: 'rgba(25, 144, 255, 0.8)', color:'#fff', minWidth:'15px',fontWeight: 700, height: '15px', lineHeight:'14px' }" >
                                                     <a-icon type="interaction" style="font-size:18px"/>
                                                     <a class="head-example" ></a>
                                                 </a-badge>
                                             </div>
                                         </div>
                                     </div>
-                                    <div v-show="program.showgroups" :key="showgroups" style="padding-top: .6em;">
+                                    <div v-show="area.showgroups" :key="showgroups" style="padding-top: .6em;">
                                         <!-- group_index -->
-                                        <ul v-for="(group  ) in program.children_" :key="group.id" style="list-style-type: none; padding:0; margin:0">
+                                        <ul v-for="(group, group_index) in area.children" :key="group.id" style="list-style-type: none; padding:0; margin:0">
                                             <li style="padding:10px 0 10px 10px">  <!-- GRUPOS -->
-                                                <div style="display:flex;align-items:center;justify-content:space-between">
+                                                <div @click="toggleGroup(area_index, group_index)" style="display:flex;align-items:center;justify-content:space-between">
                                                     <!-- @click="toggleGroup(program_index, group_index)" -->
                                                     <div  style="padding-left:20px; color:#333">
                                                         <a href="javascript:;"><a-icon :type="group.showlines?'caret-down':'caret-right'" style="padding-right:10px;cursor:default"/></a>
@@ -163,48 +163,47 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!-- Está parte queda en desuso, hasta nuevo aviso. 👇 -->
                                                 <div v-show="group.showlines" :key="showlines" style="padding-top: .6em;">
                                                     <ul v-for="line in group.children" :key="line.id" style="padding-left:65px">
-                                                    <li style="padding: 10px 0 10px 8px; border-bottom:1px solid #e7e7e7ca" class="line-hoverable">
-                                                        <div style="display:flex;align-items:center;justify-content:space-between;" >
-                                                            <div> <!-- LINEAS -->
-                                                                <span class="line-link"><a> {{line.name}} </a></span>
+                                                        <li style="padding: 10px 0 10px 8px; border-bottom:1px solid #e7e7e7ca" class="line-hoverable">
+                                                            <div style="display:flex;align-items:center;justify-content:space-between;" >
+                                                                <div> <!-- LINEAS -->
+                                                                    <span class="line-link"><a> {{line.name}} </a></span>
+                                                                </div>
+                                                                <div style="display:flex">
+                                                                    <div @click="show('authors', {line_id:line.id})" title="Investigadores" style="margin: 0 10px; cursor:pointer">
+                                                                        <a-badge :count="line.author_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                                                            <a-icon type="user" style="font-size:18px"/>
+                                                                            <a href="" class="head-example"></a>
+                                                                        </a-badge>
+                                                                    </div>
+                                                                    <div @click="listResearchByCategory(line, 'research')" title="Investigaciones" style="margin: 0 10px; cursor:pointer">
+                                                                        <a-badge :count="line.research_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                                                            <a-icon type="experiment" style="font-size:18px"/>
+                                                                            <a class="head-example" ></a>
+                                                                        </a-badge>
+                                                                    </div>
+                                                                    <div @click="listResearchByCategory(line, 'publisheds')" title="Publicaciones" style="margin: 0 10px; cursor:pointer">
+                                                                        <a-badge :count="line.published_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                                                            <a-icon type="file-pdf" style="font-size:18px"/>
+                                                                            <a class="head-example" ></a>
+                                                                        </a-badge>
+                                                                    </div>
+                                                                    <div @click="listResearchByCategory(line, 'thesis')" title="Tesis" style="margin: 0 10px; cursor:pointer">
+                                                                        <a-badge :count="line.thesis_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                                                            <a-icon type="container" style="font-size:18px"/>
+                                                                            <a class="head-example" ></a>
+                                                                        </a-badge>
+                                                                    </div>
+                                                                    <div @click="listResearchByCategory(line, 'externals')" title="I. Externas" style="margin: 0 10px; cursor:pointer">
+                                                                        <a-badge :count="line.external_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
+                                                                            <a-icon type="interaction" style="font-size:18px"/>
+                                                                            <a class="head-example" ></a>
+                                                                        </a-badge>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            <div style="display:flex">
-                                                                <div @click="show('authors', {line_id:line.id})" title="Investigadores" style="margin: 0 10px; cursor:pointer">
-                                                                    <a-badge count="5" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
-                                                                        <a-icon type="user" style="font-size:18px"/>
-                                                                        <a href="" class="head-example"></a>
-                                                                    </a-badge>
-                                                                </div>
-                                                                <div @click="listResearchByCategory(line, 'research')" title="Investigaciones" style="margin: 0 10px; cursor:pointer">
-                                                                    <a-badge :count="line.research_count" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
-                                                                        <a-icon type="experiment" style="font-size:18px"/>
-                                                                        <a class="head-example" ></a>
-                                                                    </a-badge>
-                                                                </div>
-                                                                <div @click="listResearchByCategory(line, 'publisheds')" title="Publicaciones" style="margin: 0 10px; cursor:pointer">
-                                                                    <a-badge count="3" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
-                                                                        <a-icon type="file-pdf" style="font-size:18px"/>
-                                                                        <a class="head-example" ></a>
-                                                                    </a-badge>
-                                                                </div>
-                                                                <div @click="listResearchByCategory(line, 'thesis')" title="Tesis" style="margin: 0 10px; cursor:pointer">
-                                                                    <a-badge count="3" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
-                                                                        <a-icon type="container" style="font-size:18px"/>
-                                                                        <a class="head-example" ></a>
-                                                                    </a-badge>
-                                                                </div>
-                                                                <div @click="listResearchByCategory(line, 'externals')" title="I. Externas" style="margin: 0 10px; cursor:pointer">
-                                                                    <a-badge count="3" :number-style="{ backgroundColor: 'rgba(104, 104, 104, 0.8)', minWidth:'15px', height: '15px', lineHeight:'14px' }" >
-                                                                        <a-icon type="interaction" style="font-size:18px"/>
-                                                                        <a class="head-example" ></a>
-                                                                    </a-badge>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </li>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </li>
@@ -222,7 +221,7 @@
                         filter.type_research==TESIS_RESEARCH ? 'Tesis' :
                         'Investigaciones'}} de{{ line_selected?(' la linea de '+line_selected.name) :
                                                     group_selected?('l grupo de '+group_selected.name) :
-                                                    program_selected?('l programa de '+program_selected.name) :
+                                                    area_selected?('l area de '+area_selected.name) :
                                                     ' toda la Universidad' }} </h4>
                     <div>
                         <GChart type="LineChart" :data="activities" :options="chartOptions1" style="width:100%"/>
@@ -291,7 +290,7 @@
             </a-row>
 
             <a-row>
-                <a-table :columns="author_columns" :data-source="author.investigations">
+                <a-table :columns="author_columns" :data-source="author.investigations" :row-key="record => record.id">
                     <span slot="research" slot-scope="text, record">
                         <p>{{record.title}}</p>
                     </span>
@@ -361,7 +360,7 @@ export default {
             isLoadingGraph:false,
             isLoading: false,
             faculty_selected:{},
-            program_selected:null,
+            area_selected:null,
             group_selected:null,
             line_selected:null,
             showResearch:true,
@@ -373,14 +372,14 @@ export default {
             labelCol: { span: 7 },
             wrapperCol: { span: 14 },
             data:[],
-            filter:{text:null, range:null, state:null},
+            filter:{ text:null, range:null, state:null },
             author:{},
             authors:[],
             showModal:false,
             // showModalmember:false,
             // members:[],
             authors:[],
-            fullprograms:[],
+            // fullprograms:[],
             programs:[],
             program:{},
             columns,
@@ -393,19 +392,9 @@ export default {
             showprograms:0,
             showgroups:0,
             filter_lines:"",
-            author_activities: [
-                ['Año', 'Cantidad'],
-                [0,0]
-            ],
-            chartOptions: {
-                chart: {
-                    title: 'Investigaciones',
-                }
-            },
-            activities: [
-                ['Año', 'Investigaciones'],
-                [0,0]
-            ],
+            author_activities: [ ['Año', 'Cantidad'], [0,0] ],
+            chartOptions: { chart: { title: 'Investigaciones', } },
+            activities: [ ['Año', 'Investigaciones'], [0,0] ],
             chartOptions1: {
                 legend:{
                     display:true,
@@ -415,10 +404,7 @@ export default {
                     title: 'Investigaciones por año',
                 }
             },
-            faculty_activities: [
-                ['Año', 'Investigaciones'],
-                [0,0]
-            ],
+            faculty_activities: [ ['Año', 'Investigaciones'], [0,0] ],
             chartOptions2: {
                 legend:{
                     display:true,
@@ -440,11 +426,11 @@ export default {
     },
     methods: {
         clean() {
-            this.program_selected=null;
+            this.area_selected=null;
             this.group_selected=null;
             this.line_selected=null;
 
-            this.filter.program_id=null;
+            this.filter.area_id=null;
             this.filter.group_id=null;
             this.filter.line_id=null;
         },
@@ -465,7 +451,7 @@ export default {
                 this.faculty_selected = this.programs.find(e => e.id == params.faculty_id);
                 this.filter_lines='';
                 this.searchInPrograms();
-                this.fetchPublications({faculty_id:this.faculty_selected.id});
+                this.fetchPublications({faculty_id: this.faculty_selected.id});
                 this.showPrograms = true;
             } else if (menu == 'research') {
                 this.fetchPublications();
@@ -488,62 +474,49 @@ export default {
                 this.showResearch = true;
             }
         },
-        async get_authors(params = {}){
+        async get_authors(params = {}) {
             this.loading = true;
             if(this.filter.search) params.search=this.filter.search;
-            if(this.filter.program_id) params.program_id=this.filter.program_id;
+            if(this.filter.area_id) params.area_id=this.filter.area_id;
             if(this.filter.group_id) params.group_id=this.filter.group_id;
             if(this.filter.line_id) params.line_id=this.filter.line_id;
             params.xpage = 20;
-            const {data} = await PersonRepository.get_authors(params);
+            const { data } = await PersonRepository.get_authors(params);
             this.authors = data.data;
             this.loading = false;
         },
-        searchInPrograms(){
-            let groups_=  this.faculty_selected.children;
+        async searchInPrograms() {
+            let params = {};
+            params.faculty_id = this.faculty_selected.id;
+            params.category_type = 'research.area_id';
 
-            let new_groups_ = [];
-            for(let i = 0; i < groups_.length; i++) {
-                let line_found=false;
-                let match_lines = groups_[i].children.filter(el=> el.name.toLowerCase().indexOf(this.filter_lines)>=0 );
-                if(match_lines.length>0) {
-                    line_found=true;
-                    let g = { ...groups_[i] };
-                    g.children_=match_lines;
-                    new_groups_.push(g);
-                }
-                if(!line_found){
-                    if( groups_[i].name.toLowerCase().indexOf(this.filter_lines)>=0 ) new_groups_.push({...groups_[i]});
-                }
-            }
-            let fac = {...this.faculty_selected};
-            fac.children_ = new_groups_;
-            this.faculty_selected = fac;
+            const { data } = await CategoryRepository.numberOfInvestigations(params);
+            const [listResearchCount, listThesisCount, listPublishedCount, listExternalCount] = data;
+            this.faculty_selected.children.forEach( area => {
+                const findResearch = listResearchCount.find(e => e.id == area.id);
+                area.research_count = findResearch ? findResearch.research_count : 0;
+
+                const findThesis = listThesisCount.find(e => e.id == area.id);
+                area.thesis_count = findThesis ? findThesis.thesis_count : 0;
+
+                const findPublished = listPublishedCount.find(e => e.id == area.id);
+                area.published_count = findPublished ? findPublished.published_count : 0;
+
+                const findExternal = listExternalCount.find(e => e.id == area.id);
+                area.external_count = findExternal ? findExternal.external_count : 0;
+            });
         },
         async fetchLines() {
             try {
-                let { data } = await CategoryRepository.list({inc_counts:true});
-                data.forEach(e => {//fac
-                    e.children.forEach(el => {//grupos
-                        let authors = el.children.reduce( (s,l) => s+ (l.author_count||''), '' );
-                        let total_authors = 0;
-                        if(authors!='') total_authors = [...new Set(authors.split(","))].length;
-                        el.author_count = total_authors;
-                        el.children.forEach( line => {
-                            line.author_count  = (line.author_count?line.author_count.split(','):[]).length;  } );
-                        el.research_count = el.children.reduce((s,l)=> s+l.research_count,0);
-                        el.published_count = el.children.reduce((s,l)=> s+l.published_count,0);
-                        el.thesis_count = el.children.reduce((s,l)=> s+l.thesis_count,0);
-                        el.external_count = el.children.reduce((s,l)=> s+l.external_count,0);
-                    });
-                });
+                // let { data } = await CategoryRepository.list({inc_counts:true});
+                let { data } = await CategoryRepository.list();
                 this.programs = data;
-                this.fullprograms = data;
+                // this.fullprograms = data;
             } catch (error) {
                 this.error("Los datos no se cargaron correctamente");
             }
         },
-        async fetchPublications(params={}){
+        async fetchPublications(params={}) {
             try {
                 params.text = this.filter.text;
                 if(this.filter.range?.length) {
@@ -555,7 +528,7 @@ export default {
                 params.type = this.filter.type;
                 params.line_id = this.filter.line_id;
                 params.group_id = this.filter.group_id;
-                params.program_id = this.filter.program_id;
+                params.area_id = this.filter.area_id;
                 const { data } = await ResearchRepository.list_outcomes_by_year(params);
                 this.activities = [['Año', 'Investigaciones'],["0",0]];
                 for(let $i = 0; $i < data.length; $i++) {
@@ -565,17 +538,61 @@ export default {
                 this.error("Los datos no se cargaron correctamente");
             }
         },
-        toggleFaculty( index) {
+        async numberOfInvestigationsGroups(index) {
+            let params = {};
+            params.faculty_id = this.faculty_selected.id;
+            params.category_type = 'research.group_id';
+            params.parent_id = this.faculty_selected.children[index].id;
+            const { data } = await CategoryRepository.numberOfInvestigations(params);
+            const [listResearchCount, listThesisCount, listPublishedCount, listExternalCount] = data;
+            this.faculty_selected.children[index].children.forEach( group => {
+                const findResearch = listResearchCount.find(e => e.id == group.id);
+                group.research_count = findResearch ? findResearch.research_count : 0;
+
+                const findThesis = listThesisCount.find(e => e.id == group.id);
+                group.thesis_count = findThesis ? findThesis.thesis_count : 0;
+
+                const findPublished = listPublishedCount.find(e => e.id == group.id);
+                group.published_count = findPublished ? findPublished.published_count : 0;
+
+                const findExternal = listExternalCount.find(e => e.id == group.id);
+                group.external_count = findExternal ? findExternal.external_count : 0;
+            });
+        },
+        async numberOfInvestigationsLines(area_index, group_index) {
+            let params = {};
+            params.faculty_id = this.faculty_selected.id;
+            params.category_type = 'research.line_id';
+            params.parent_id = this.faculty_selected.children[area_index].children[group_index].id;
+            const { data } = await CategoryRepository.numberOfInvestigations(params);
+            const [listResearchCount, listThesisCount, listPublishedCount, listExternalCount] = data;
+            this.faculty_selected.children[area_index].children[group_index].children.forEach( line => {
+                const findResearch = listResearchCount.find(e => e.id == line.id);
+                line.research_count = findResearch ? findResearch.research_count : 0;
+
+                const findThesis = listThesisCount.find(e => e.id == line.id);
+                line.thesis_count = findThesis ? findThesis.thesis_count : 0;
+
+                const findPublished = listPublishedCount.find(e => e.id == line.id);
+                line.published_count = findPublished ? findPublished.published_count : 0;
+
+                const findExternal = listExternalCount.find(e => e.id == line.id);
+                line.external_count = findExternal ? findExternal.external_count : 0;
+            });
+        },
+        toggleFaculty(index) {
             this.showprograms ++;
             this.programs[index].showprograms=!this.programs[index].showprograms;
         },
-        toggleProgram( index) {
+        async toggleProgram(index) {
+            await this.numberOfInvestigationsGroups(index);
+            this.faculty_selected.children[index].showgroups = !(this.faculty_selected.children[index].showgroups || false);
             this.showgroups ++;
-            this.faculty_selected.children_[index].showgroups=!(this.faculty_selected.children_[index].showgroups||false);
         },
-        toggleGroup(  program_index, group_index ) {
+        async toggleGroup(area_index, group_index) {
+            await this.numberOfInvestigationsLines(area_index, group_index);
+            this.faculty_selected.children[area_index].children[group_index].showlines=!(this.faculty_selected.children[area_index].children[group_index].showlines || false);
             this.showlines ++;
-            this.faculty_selected.children[program_index].children[group_index].showlines=!(this.faculty_selected.children[program_index].children[group_index].showlines||false);
         },
         onSelect(selectedKeys, info) {
             return selectedKeys, info;
@@ -583,7 +600,7 @@ export default {
         async showAuthor(id) {
             this.showModal = true;
             try {
-                const {data} = await PersonRepository.get_author(id);
+                const { data } = await PersonRepository.get_author(id);
                 this.author = data.author;
                 this.author.investigations = data.research;
                 this.author.lines = data.lines;
@@ -596,7 +613,7 @@ export default {
             try {
                 const { data } = await PersonRepository.get_author_activity(author_id);
                 this.author_activities=[['Año', 'Cantidad']];
-                for(var $i=0;$i<data.length;$i++) {
+                for(let $i = 0; $i < data.length; $i++) {
                     this.author_activities.push([data[$i].year+'',data[$i].q]);
                 }
             } catch (error) {
@@ -606,16 +623,16 @@ export default {
         get_type_outcome($type) {
             let $name_type = "";
             switch($type) {
-            case 1: $name_type = "Proyecto"; break;
-            case 2: $name_type = "Avance"; break;
-            case 3: $name_type = "Informe"; break;
-            case 4: $name_type = "Articulo"; break;
+                case 1: $name_type = "Proyecto"; break;
+                case 2: $name_type = "Avance"; break;
+                case 3: $name_type = "Informe"; break;
+                case 4: $name_type = "Articulo"; break;
             }
             return $name_type;
         },
         get_year($date) {
-            let $dc = "";
-            $d = new Date($date);
+            let $d="";
+            $d=new Date($date);
             return $d.getFullYear();
         },
         parseAuthor(list) {
@@ -638,15 +655,15 @@ export default {
         listResearchByCategory(category, type) {
             this.showPrograms = false;
             this.showResearch = true;
-            this.program_selected = null;
+            this.area_selected = null;
             this.group_selected = null;
             this.line_selected = null;
-            this.filter.program_id = null;
+            this.filter.area_id = null;
             this.filter.group_id = null;
             this.filter.line_id = null;
             if (category.type == 'Linea') { this.line_selected = category; this.filter.line_id=category.id;}
-            else if (category.type == 'Grupo') {this.group_selected = category; this;this.filter.group_id=category.id;}
-            else if (category.type == 'Programa') {this.program_selected = category; this.filter.program_id=category.id;}
+            else if (category.type == 'Grupo') {this.group_selected = category; this.filter.group_id=category.id;}
+            else if (category.type == 'Area') {this.area_selected = category; this.filter.area_id=category.id;}
 
             if (type=='research') this.show("research");
             else if (type=='publisheds') this.show("publisheds");
@@ -656,15 +673,15 @@ export default {
         listAuthorsByCategory(category, type) {
             this.showPrograms = false;
             this.showResearch = false;
-            this.program_selected = null;
+            this.area_selected = null;
             this.group_selected = null;
             this.line_selected = null;
-            this.filter.program_id = null;
+            this.filter.area_id = null;
             this.filter.group_id = null;
             this.filter.line_id = null;
             if (category.type == 'Linea') { this.line_selected = category; this.filter.line_id=category.id;}
             else if (category.type == 'Grupo') {this.group_selected = category; this;this.filter.group_id=category.id;}
-            else if (category.type == 'Programa') {this.program_selected = category; this.filter.program_id=category.id;}
+            else if (category.type == 'Area') {this.area_selected = category; this.filter.area_id=category.id;}
             this.show("authors");
         },
         async fetch(params = {}) {
@@ -678,12 +695,13 @@ export default {
                 params.type = this.filter.type;
                 params.line_id = this.filter.line_id;
                 params.group_id = this.filter.group_id;
-                params.program_id = this.filter.program_id;
+                params.area_id = this.filter.area_id;
                 this.loading = true;
-                const {data} =  await ResearchRepository.list_outcomes(params);
+                // const { data } =  await ResearchRepository.list_outcomes(params);
+                const { data } =  await ResearchRepository.list_outcomes_new(params);
                 this.data = this.parseAuthor(data.data);
 
-                const pagination = {...this.pagination};
+                const pagination = { ...this.pagination };
                 pagination.total = data.total;
                 this.pagination = pagination;
                 this.loading = false;

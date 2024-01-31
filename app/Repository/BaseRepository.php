@@ -1,15 +1,15 @@
-<?php  
- 
+<?php
+
 namespace App\Repository;
 
 use Egulias\EmailValidator\Exception\AtextAfterCFWS;
-use Illuminate\Database\Eloquent\Model;  
-use Illuminate\Support\Facades\DB; 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 use PhpOffice\PhpWord\Style\Language;
 
-class BaseRepository {     
-    protected $model;       
-    public function __construct(Model $model){         
+class BaseRepository {
+    protected $model;
+    public function __construct(Model $model){
         $this->model = $model;
     }
 
@@ -32,7 +32,7 @@ class BaseRepository {
     {
         return $this->model->destroy($id);
     }
- 
+
     public function find($id): ?Model{
         return $this->model->find($id);
     }
@@ -48,10 +48,10 @@ class BaseRepository {
     }
 
     public function add_condition($field, $params, $table_prefix=false){
-		if( array_key_exists($field,$params) ) { 
-			$condition = [ ( $table_prefix?"$table_prefix.":'' ).$field  ,'=', $params[$field]];
-		 }else{ throw new Exception("$field not found in params");}
-		 return $condition;
+		if( array_key_exists($field, $params) ) {
+			$condition = [($table_prefix ? "$table_prefix." : '').$field  ,'=', $params[$field]];
+		} else { throw new Exception("$field not found in params"); }
+		return $condition;
 	}
 
     public function getPDODriver(){
@@ -62,16 +62,16 @@ class BaseRepository {
         if($this->getPDODriver()  =='pgsql'){
             $func= ($period_type=='M'?'extract(month from':'extract(quarter from') ." $date_field)";
         }else{
-           $func= ($period_type=='M'?'month':'quarter') ."($date_field)";
+            $func= ($period_type=='M'?'month':'quarter') ."($date_field)";
         }
-      return $func;
+        return $func;
     }
 
     public function getDateFormatSql($field, $format=false ){
         $driver = $this->getPDODriver();
         $pg_format= "YYYY-MM-DD";
         $my_format="%Y-%m-%d";
-        if($format=='d/m/Y' && $driver=='pgsql') $pg_format="DD/MM/YYYY"; 
+        if($format=='d/m/Y' && $driver=='pgsql') $pg_format="DD/MM/YYYY";
         else if($format=='d/m/Y' &&  $driver=='mysql') $my_format="%d/%m/%Y";
         return  $driver=='pgsql'? "to_char($field, '$pg_format' )":"date_format($field,' $my_format')";
     }
@@ -82,36 +82,35 @@ class BaseRepository {
 
     public function getOutcomeAuthorsSqlPart($author_full=false){
         $author_fields = $author_full?"author_id,'|',p.name,' ',p.lastname, '|', role,'|',p.photo, '|', p.type, '|', COALESCE(p.condition,'-'), '|',  COALESCE(p.dni,'-')":"author_id,'|',p.name,' ',p.lastname, '|', role,'|',p.photo";
-       
+
         if(  $this->getPDODriver() =='pgsql'){
-            $sql= "(select array_to_string(array_agg( concat($author_fields) ),',') from outcome_authors oa  inner join people p on p.id=oa.author_id 
+            $sql= "(select array_to_string(array_agg( concat($author_fields) ),',') from outcome_authors oa  inner join people p on p.id=oa.author_id
             where outcomes.id=oa.outcome_id and oa.status=1 group by oa.outcome_id)";
-        }else 
+        }else
             $sql = "(select group_concat( $author_fields ) from outcome_authors oa inner join people p on p.id=oa.author_id   where outcomes.id=oa.outcome_id and oa.status=1 group by oa.outcome_id)";
         return $sql;
     }
 
     public function getGroupConcatSqlPart($fields){
-        return   $this->getPDODriver() =='pgsql'?" array_to_string(array_agg( concat($fields) ),',') ": "group_concat($fields)";
+        return $this->getPDODriver() =='pgsql'?" array_to_string(array_agg( concat($fields) ),',') ": "group_concat($fields)";
     }
 
-    public function getResearchAuthorsSqlPart($inc_lastname = false){
+    public function getResearchAuthorsSqlPart($inc_lastname = false) {
         $fields = $inc_lastname?"author_id,'|',p.name,'|',p.lastname,'|', role,'|',p.photo":"author_id,'|',p.name,' ',p.lastname, '|', role,'|',p.photo";
-        if( $this->getPDODriver() =='pgsql'){
-            $sql= "(select array_to_string(array_agg( concat($fields ) ),',') 
-             from  research_authors ra inner join people p on p.id=ra.author_id  
+        if( $this->getPDODriver() == 'pgsql'){
+            $sql = "(select array_to_string(array_agg( concat($fields ) ),',')
+            from  research_authors ra inner join people p on p.id=ra.author_id
             where research_id=research.id and ra.status=1  group by ra.research_id)";
-        }else 
-            $sql = "(select group_concat( $fields  ) from research_authors ra 
+        } else
+            $sql = "(select group_concat( $fields  ) from research_authors ra
 			inner join people p on p.id=ra.author_id where research_id=research.id and ra.status=1  group by ra.research_id)";
             return $sql;
-        
     }
 
     public function saveWord($filename, $phpWord){
         $phpWord->getSettings()->setThemeFontLang(new Language(Language::ES_ES));
-         $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
-        try { $objWriter->save(storage_path($filename)); } 
+        $objWriter = \PhpOffice\PhpWord\IOFactory::createWriter($phpWord, 'Word2007');
+        try { $objWriter->save(storage_path($filename)); }
         catch (Exception $e) { }
     }
 
@@ -154,7 +153,7 @@ class BaseRepository {
             $table->addCell(7000, $cellVCentered)->addText('"Promoviendo la Calidad de la Investigación"', ['italic'=>true,'size'=>'10' ], $cellHCentered);
             $table->addCell(null, $cellRowContinue);
         }
-        
+
 
 		$header->addText(" ");
 		return ['phpWord'=>$phpWord, 'section' => $section ];

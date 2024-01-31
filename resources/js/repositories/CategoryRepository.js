@@ -7,6 +7,9 @@ export default {
     list_programs_and_lines(params){
         return backend.get(`${resource}/list_programs_and_lines`,{params})
     },
+    numberOfInvestigations(params) {
+        return backend.get(`${resource}/number_of_investigations`,{params})
+    },
     save(payload){
         if('id' in payload)  return backend.put(`${resource}/${payload.id}`,payload)
         return backend.post(`${resource}`,payload)
