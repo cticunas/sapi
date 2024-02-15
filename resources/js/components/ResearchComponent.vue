@@ -260,10 +260,10 @@
                             </a-select>
                         </a-form-model-item>
 
-                        <a-form-model-item label="Area" prop="area">
+                        <a-form-model-item label="Areaa" prop="area">
                             <a-select show-search option-filter-prop="children" v-model="research.area_id" placeholder="Seleccione un Area" @change="onChangeArea()" :disabled="research.readOnly || !research.allowEdit">
                                 <a-select-option v-for="item in areas" :value="item.id" :key="item.id" :title="item.name">
-                                    {{item.name}}
+                                    {{item.name}}sdsdfds
                                 </a-select-option>
                             </a-select>
                         </a-form-model-item>
@@ -1322,30 +1322,30 @@
                 try {
                     if (this.user_logged.faculty_id == null) throw ("No tiene facultad asignada, contacte a su administrador.");
                     if (this.user_logged.group_id == null) throw ("No tiene grupo asignado, contacte a su administrador.");
-                    let allowEdit = !(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id==UNIT_ROLE) ? true : false ;
-
+                    // let allowEdit = !(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id==UNIT_ROLE) ? true : false ;
+                    let allowEdit = !(this.user_logged.role_id==UNIT_ROLE) ? true : false ;
                     this.research = {
-                      type_research:this.user_logged.type=='D'?"2":"1",
-                      // date_init: moment().format('YYYY-MM-DD'),
-                      date_init: moment(),
-                      faculty_id:this.user_logged.faculty_id,
-                      // date_end: moment().add(1,'y').format('YYYY-MM-DD'),
-                      date_end: moment().add(1,'y'),
-                      research_authors: [],
-                      objectives: [],
-                      plan:this.plans.filter(e=>e.active==1)[0].id,
-                      location: this.LOCATION,
-                      fin_company: "Universidad Nacional Agraria de la Selva",
-                      fin_type: '3',
-                      incentive: this.user_logged.type == 'D' ? 1 : 0,
-                      grade: '1',
-                      budget: 0,
-                      allowEdit: allowEdit,
+                        type_research:this.user_logged.type=='D'?"2":"1",
+                        // date_init: moment().format('YYYY-MM-DD'),
+                        date_init: moment(),
+                        faculty_id:this.user_logged.faculty_id,
+                        // date_end: moment().add(1,'y').format('YYYY-MM-DD'),
+                        date_end: moment().add(1,'y'),
+                        research_authors: [],
+                        objectives: [],
+                        plan:this.plans.filter(e=>e.active==1)[0].id,
+                        location: this.LOCATION,
+                        fin_company: "Universidad Nacional Agraria de la Selva",
+                        fin_type: '3',
+                        incentive: this.user_logged.type == 'D' ? 1 : 0,
+                        grade: '1',
+                        budget: 0,
+                        allowEdit: allowEdit,
                     };
                     this.research_authors = [{
-                      id:this.user_logged.people_id+"",
-                      fullname: this.user_logged.name + ' ' +this.user_logged.lastname,
-                      role:'TI',
+                        id:this.user_logged.people_id+"",
+                        fullname: this.user_logged.name + ' ' +this.user_logged.lastname,
+                        role:'TI',
                     }];
                     this.listSchoolsOfAFaculty();
                     await this.selectAreas();
