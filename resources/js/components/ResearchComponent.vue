@@ -261,7 +261,7 @@
                         </a-form-model-item>
 
                         <a-form-model-item label="Areaa" prop="area">
-                            <a-select show-search option-filter-prop="children" v-model="research.area_id" placeholder="Seleccione un Area" @change="onChangeArea()" :disabled="research.readOnly || !research.allowEdit">
+                            <a-select show-search option-filter-prop="children" v-model="research.area_id" placeholder="Seleccione un Area" @change="onChangeArea()" :disabled="research.readOnly || research.notAllowEditResearchUnit">
                                 <a-select-option v-for="item in areas" :value="item.id" :key="item.id" :title="item.name">
                                     {{item.name}}sdsdfds
                                 </a-select-option>
@@ -269,7 +269,7 @@
                         </a-form-model-item>
 
                         <a-form-model-item label="Grupo" prop="group">
-                            <a-select show-search option-filter-prop="children" v-model="research.group_id" placeholder="Seleccione un Grupo" @change="onChangeGroup()" :disabled="research.readOnly || !research.allowEdit">
+                            <a-select show-search option-filter-prop="children" v-model="research.group_id" placeholder="Seleccione un Grupo" @change="onChangeGroup()" :disabled="research.readOnly || research.notAllowEditResearchUnit">
                                 <a-select-option v-for="item in groups" :value="item.id" :key="item.id" :title="item.name">
                                     {{item.name}}
                                 </a-select-option>
@@ -1031,21 +1031,20 @@
                 this.faculties = data;
             },
             onChangeArea() {
-              this.groups = [];
-              this.lines = [];
-              this.research.group_id = null;
-              this.research.line_id = null;
-              this.selectGroups();
-
+                this.groups = [];
+                this.lines = [];
+                this.research.group_id = null;
+                this.research.line_id = null;
+                this.selectGroups();
             },
             onChangeGroup() {
-              try {
-                this.lines = [];
-                this.research.line_id = null;
-                this.selectLines();
-              } catch (error) {
-                this.error(error)
-              }
+                try {
+                    this.lines = [];
+                    this.research.line_id = null;
+                    this.selectLines();
+                } catch (error) {
+                    this.error(error)
+                }
             },
             onChangeLine(e) {
                 this.line_select_key++;
@@ -1322,8 +1321,9 @@
                 try {
                     if (this.user_logged.faculty_id == null) throw ("No tiene facultad asignada, contacte a su administrador.");
                     if (this.user_logged.group_id == null) throw ("No tiene grupo asignado, contacte a su administrador.");
-                    // let allowEdit = !(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id==UNIT_ROLE) ? true : false ;
-                    let allowEdit = !(this.user_logged.role_id==UNIT_ROLE) ? true : false ;
+                    let allowEdit = !(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id==UNIT_ROLE) ? true : false;
+                    let notAllowEditResearchUnit = this.user_logged.role_id == UNIT_ROLE;
+
                     this.research = {
                         type_research:this.user_logged.type=='D'?"2":"1",
                         // date_init: moment().format('YYYY-MM-DD'),
@@ -1341,6 +1341,7 @@
                         grade: '1',
                         budget: 0,
                         allowEdit: allowEdit,
+                        notAllowEditResearchUnit: notAllowEditResearchUnit,
                     };
                     this.research_authors = [{
                         id:this.user_logged.people_id+"",
@@ -1395,10 +1396,12 @@
                 if(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id == ADMIN_ROLE) params.author_id = this.user_logged.people_id;
                 if(params.readOnly) this.research.readOnly = true;
                 let allowEdit = !(this.user_logged.role_id == RESEARCH_ROLE || this.user_logged.role_id==UNIT_ROLE) ? true : false ;
+                let notAllowEditResearchUnit = this.user_logged.role_id == UNIT_ROLE;
 
                 let d = this.data.find(item => item.id == id);
                 this.research = { ...d };
                 this.research.allowEdit = allowEdit;
+                this.research.notAllowEditResearchUnit = notAllowEditResearchUnit;
                 this.research.date_init = moment(d.date_init, 'DD/MM/YYYY');
                 this.research.date_end = moment(d.date_end, 'DD/MM/YYYY');
                 this.isExternal = d.external ? 'true' : 'false';
